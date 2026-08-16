@@ -1,0 +1,891 @@
+/* =====================================================
+   GLOBAL
+===================================================== */
+
+.trusted-brands-section,
+.car-newsletter-section {
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+.trusted-brands-section *,
+.car-newsletter-section * {
+  box-sizing: border-box;
+}
+
+/* =====================================================
+   TRUSTED BRANDS SECTION
+===================================================== */
+
+.trusted-brands-section {
+  width: 100%;
+  padding: 38px 15px 35px;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.trusted-brands-container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* =====================================================
+   BRAND HEADING
+===================================================== */
+
+.trusted-brands-heading {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto 28px;
+}
+
+.trusted-brands-heading h2 {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  color: #17243a;
+
+  font-size: 37px;
+  font-weight: 600;
+
+  line-height: 1.2;
+  letter-spacing: 0;
+
+  text-transform: none;
+}
+
+.trusted-brands-heading p {
+  margin: 8px 0 0;
+  padding: 0;
+
+  color: #737d8d;
+
+  font-size: 16px;
+  font-weight: 400;
+
+  line-height: 1.5;
+}
+
+/* =====================================================
+   BRAND SLIDER WRAPPER
+===================================================== */
+
+.brands-slider-wrapper {
+  width: 100%;
+  max-width: 100%;
+
+  overflow: hidden;
+
+  position: relative;
+
+  padding: 0;
+}
+
+/* =====================================================
+   BRAND SLIDER
+===================================================== */
+
+.brands-slider {
+  width: max-content;
+
+  display: flex;
+  align-items: center;
+
+  gap: 65px;
+
+  will-change: transform;
+
+  transform: translate3d(0, 0, 0);
+}
+
+/* =====================================================
+   BRAND ITEM
+===================================================== */
+
+.brand-item {
+  width: 145px;
+  height: 85px;
+
+  flex: 0 0 145px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: visible;
+}
+
+/* =====================================================
+   BRAND LOGO
+===================================================== */
+
+.brand-item img {
+  display: block;
+
+  width: auto;
+  height: 65px;
+
+  max-width: 140px;
+
+  object-fit: contain;
+
+  opacity: 0.95;
+
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
+}
+
+.brand-item:hover img {
+  opacity: 1;
+  transform: scale(1.08);
+}
+
+/* =====================================================
+   CAR NEWSLETTER SECTION
+===================================================== */
+
+.car-newsletter-section {
+  position: relative;
+
+  width: 100%;
+
+  min-height: 430px;
+
+  margin: 0;
+
+  padding: 0 15px;
+
+  overflow: hidden;
+
+  background-image: url("/assets/car-newsletter-bg.png");
+
+  background-repeat: no-repeat;
+
+  background-position: center center;
+
+  background-size: cover;
+}
+
+/* =====================================================
+   CAR CONTENT CONTAINER
+===================================================== */
+
+.car-newsletter-container {
+  position: relative;
+
+  z-index: 2;
+
+  width: 100%;
+
+  max-width: 1400px;
+
+  min-height: 430px;
+
+  margin: 0 auto;
+
+  display: flex;
+
+  align-items: center;
+
+  padding: 0 15px;
+}
+
+/* =====================================================
+   NEWSLETTER CONTENT
+===================================================== */
+
+.car-newsletter-content {
+  width: 50%;
+  max-width: 560px;
+
+  padding-left: 25px;
+
+  color: #ffffff;
+}
+
+.car-newsletter-content h2 {
+  margin: 0;
+  padding: 0;
+
+  color: #ffffff;
+
+  font-size: 42px;
+  font-weight: 600;
+
+  line-height: 1.2;
+
+  letter-spacing: 0;
+
+  text-transform: none;
+}
+
+.car-newsletter-content p {
+  margin: 12px 0 25px;
+  padding: 0;
+
+  color: rgba(255, 255, 255, 0.92);
+
+  font-size: 16px;
+  font-weight: 400;
+
+  line-height: 1.5;
+}
+
+/* =====================================================
+   NEWSLETTER FORM
+===================================================== */
+
+.newsletter-form {
+  width: 100%;
+  max-width: 510px;
+
+  display: flex;
+  align-items: stretch;
+
+  margin: 0;
+  padding: 0;
+}
+
+.newsletter-form input {
+  flex: 1;
+
+  width: 100%;
+  min-width: 0;
+
+  height: 52px;
+
+  padding: 0 18px;
+
+  border: none;
+  outline: none;
+
+  background: #ffffff;
+
+  color: #1d2a3c;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 14px;
+  font-weight: 400;
+
+  border-radius: 7px 0 0 7px;
+}
+
+.newsletter-form input::placeholder {
+  color: #8a929d;
+}
+
+.newsletter-form button {
+  flex: 0 0 125px;
+
+  width: 125px;
+  height: 52px;
+
+  padding: 0;
+
+  border: none;
+  outline: none;
+
+  cursor: pointer;
+
+  background: #102039;
+
+  color: #ffffff;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  border-radius: 0 7px 7px 0;
+
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease;
+}
+
+.newsletter-form button:hover {
+  background: #f28a20;
+}
+
+/* =====================================================
+   EXTRA LARGE DESKTOP
+   1600px+
+===================================================== */
+
+@media (min-width: 1600px) {
+  .trusted-brands-section {
+    padding-top: 45px;
+    padding-bottom: 40px;
+  }
+
+  .trusted-brands-heading {
+    margin-bottom: 32px;
+  }
+
+  .trusted-brands-heading h2 {
+    font-size: 42px;
+  }
+
+  .trusted-brands-heading p {
+    font-size: 16px;
+  }
+
+  .brands-slider {
+    gap: 80px;
+  }
+
+  .brand-item {
+    width: 160px;
+    height: 90px;
+    flex-basis: 160px;
+  }
+
+  .brand-item img {
+    max-width: 150px;
+    height: 70px;
+  }
+
+  .car-newsletter-section {
+    min-height: 750px;
+  }
+
+  .car-newsletter-container {
+    min-height: 460px;
+  }
+
+  .car-newsletter-content {
+    padding-left: 35px;
+  }
+
+  .car-newsletter-content h2 {
+    font-size: 42px;
+  }
+
+  .car-newsletter-content p {
+    font-size: 16px;
+  }
+}
+
+/* =====================================================
+   DESKTOP
+   1200px - 1599px
+===================================================== */
+
+@media (min-width: 1200px) and (max-width: 1599px) {
+  .trusted-brands-section {
+    padding: 38px 15px 35px;
+  }
+
+  .brands-slider {
+    gap: 65px;
+  }
+
+  .brand-item {
+    width: 145px;
+    flex-basis: 145px;
+  }
+
+  .brand-item img {
+    max-width: 140px;
+    height: 65px;
+  }
+
+  .car-newsletter-section {
+    min-height: 430px;
+  }
+
+  .car-newsletter-container {
+    min-height: 430px;
+  }
+
+  .car-newsletter-content {
+    width: 50%;
+    padding-left: 25px;
+  }
+}
+
+/* =====================================================
+   LAPTOP
+   992px - 1199px
+===================================================== */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .trusted-brands-section {
+    padding: 35px 15px 32px;
+  }
+
+  .trusted-brands-heading {
+    margin-bottom: 25px;
+  }
+
+  .trusted-brands-heading h2 {
+    font-size: 38px;
+  }
+
+  .trusted-brands-heading p {
+    font-size: 16px;
+  }
+
+  .brands-slider {
+    gap: 45px;
+  }
+
+  .brand-item {
+    width: 125px;
+    height: 75px;
+    flex-basis: 125px;
+  }
+
+  .brand-item img {
+    max-width: 120px;
+    height: 55px;
+  }
+
+  /* Car */
+
+  .car-newsletter-section {
+    min-height: 390px;
+
+    background-position: center center;
+    background-size: cover;
+  }
+
+  .car-newsletter-container {
+    min-height: 390px;
+
+    padding: 0 20px;
+  }
+
+  .car-newsletter-content {
+    width: 52%;
+    max-width: 540px;
+
+    padding-left: 15px;
+  }
+
+  .car-newsletter-content h2 {
+    font-size: 38px;
+  }
+
+  .car-newsletter-content p {
+    font-size: 16px;
+  }
+
+  .newsletter-form {
+    max-width: 460px;
+  }
+}
+
+/* =====================================================
+   TABLET LANDSCAPE
+   768px - 991px
+===================================================== */
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .trusted-brands-section {
+    padding: 30px 15px;
+  }
+
+  .trusted-brands-heading {
+    margin-bottom: 22px;
+  }
+
+  .trusted-brands-heading h2 {
+    font-size: 34px;
+  }
+
+  .trusted-brands-heading p {
+    font-size: 15px;
+  }
+
+  .brands-slider {
+    gap: 35px;
+  }
+
+  .brand-item {
+    width: 110px;
+    height: 68px;
+    flex-basis: 110px;
+  }
+
+  .brand-item img {
+    max-width: 105px;
+    height: 48px;
+  }
+
+  /* Car */
+
+  .car-newsletter-section {
+    min-height: 350px;
+
+    background-position: center center;
+    background-size: cover;
+  }
+
+  .car-newsletter-container {
+    min-height: 350px;
+
+    padding: 0 15px;
+  }
+
+  .car-newsletter-content {
+    width: 55%;
+    max-width: 480px;
+
+    padding-left: 5px;
+  }
+
+  .car-newsletter-content h2 {
+    font-size: 32px;
+  }
+
+  .car-newsletter-content p {
+    font-size: 15px;
+
+    margin: 10px 0 20px;
+  }
+
+  .newsletter-form {
+    max-width: 400px;
+  }
+
+  .newsletter-form input,
+  .newsletter-form button {
+    height: 48px;
+  }
+
+  .newsletter-form button {
+    flex-basis: 110px;
+    width: 110px;
+  }
+}
+
+/* =====================================================
+   TABLET PORTRAIT
+   600px - 767px
+===================================================== */
+
+@media (min-width: 600px) and (max-width: 767px) {
+  .trusted-brands-section {
+    padding: 28px 15px;
+  }
+
+  .trusted-brands-heading {
+    margin-bottom: 20px;
+  }
+
+  .trusted-brands-heading h2 {
+    font-size: 32px;
+  }
+
+  .trusted-brands-heading p {
+    font-size: 15px;
+  }
+
+  .brands-slider {
+    gap: 30px;
+  }
+
+  .brand-item {
+    width: 100px;
+    height: 62px;
+    flex-basis: 100px;
+  }
+
+  .brand-item img {
+    max-width: 95px;
+    height: 44px;
+  }
+
+  /* Car */
+
+  .car-newsletter-section {
+    min-height: 430px;
+
+    background-position: 62% center;
+    background-size: cover;
+  }
+
+  .car-newsletter-container {
+    min-height: 430px;
+
+    align-items: flex-start;
+
+    padding: 50px 15px 0;
+  }
+
+  .car-newsletter-content {
+    width: 60%;
+    max-width: 430px;
+
+    padding-left: 0;
+  }
+
+  .car-newsletter-content h2 {
+    font-size: 32px;
+  }
+
+  .car-newsletter-content p {
+    font-size: 15px;
+
+    margin-bottom: 20px;
+  }
+
+  .newsletter-form {
+    max-width: 360px;
+  }
+
+  .newsletter-form input,
+  .newsletter-form button {
+    height: 46px;
+  }
+
+  .newsletter-form button {
+    flex-basis: 105px;
+    width: 105px;
+  }
+}
+
+/* =====================================================
+   NEWSLETTER FORM - FINAL FIX
+===================================================== */
+
+.newsletter-form {
+  width: 100%;
+  max-width: 510px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+
+  gap: 0;
+
+  margin: 0;
+  padding: 0;
+}
+
+/* EMAIL INPUT */
+
+.newsletter-form input {
+  flex: 1 1 auto;
+
+  width: auto;
+  min-width: 0;
+
+  height: 52px;
+
+  padding: 0 18px;
+
+  border: none;
+  outline: none;
+
+  background: #ffffff;
+
+  color: #17243a;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+
+  border-radius: 7px 0 0 7px;
+}
+
+/* SUBSCRIBE BUTTON */
+
+.newsletter-form button {
+  flex: 0 0 125px;
+
+  width: 125px;
+  height: 52px;
+
+  padding: 0;
+
+  border: none;
+  outline: none;
+
+  background: #102039;
+
+  color: #ffffff;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  border-radius: 0 7px 7px 0;
+
+  white-space: nowrap;
+
+  transition: background 0.25s ease;
+}
+
+.newsletter-form button:hover {
+  background: #f28a20;
+}
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .newsletter-form {
+    width: 100%;
+    max-width: 420px;
+
+    display: flex;
+    flex-direction: row;
+  }
+
+  .newsletter-form input {
+    height: 48px;
+
+    padding: 0 15px;
+
+    font-size: 13px;
+
+    border-radius: 7px 0 0 7px;
+  }
+
+  .newsletter-form button {
+    flex: 0 0 110px;
+
+    width: 110px;
+    height: 48px;
+
+    font-size: 13px;
+
+    border-radius: 0 7px 7px 0;
+  }
+}
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 767px) {
+  .newsletter-form {
+    width: 100%;
+
+    max-width: 100%;
+
+    display: flex;
+
+    flex-direction: row;
+
+    align-items: stretch;
+
+    gap: 0;
+
+    margin: 0 auto;
+  }
+
+  /* EMAIL */
+
+  .newsletter-form input {
+    flex: 1 1 auto;
+
+    width: auto;
+
+    min-width: 0;
+
+    height: 46px;
+
+    padding: 0 14px;
+
+    font-size: 13px;
+
+    border-radius: 7px 0 0 7px;
+  }
+
+  /* BUTTON */
+
+  .newsletter-form button {
+    flex: 0 0 105px;
+
+    width: 105px;
+
+    height: 46px;
+
+    padding: 0;
+
+    font-size: 13px;
+
+    border-radius: 0 7px 7px 0;
+  }
+}
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 480px) {
+  .newsletter-form {
+    width: 100%;
+
+    max-width: 100%;
+
+    flex-direction: row;
+
+    gap: 0;
+  }
+
+  .newsletter-form input {
+    flex: 1 1 auto;
+
+    min-width: 0;
+
+    height: 44px;
+
+    padding: 0 12px;
+
+    font-size: 12px;
+
+    border-radius: 7px 0 0 7px;
+  }
+
+  .newsletter-form button {
+    flex: 0 0 100px;
+
+    width: 100px;
+
+    height: 44px;
+
+    font-size: 12px;
+
+    border-radius: 0 7px 7px 0;
+  }
+}
+
+/* =====================================================
+   VERY SMALL MOBILE
+===================================================== */
+
+@media (max-width: 360px) {
+  .newsletter-form {
+    width: 100%;
+  }
+
+  .newsletter-form input {
+    height: 42px;
+
+    padding: 0 10px;
+
+    font-size: 11px;
+  }
+
+  .newsletter-form button {
+    flex: 0 0 92px;
+
+    width: 92px;
+
+    height: 42px;
+
+    font-size: 11px;
+  }
+}

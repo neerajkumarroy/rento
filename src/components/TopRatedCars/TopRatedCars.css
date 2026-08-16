@@ -1,0 +1,1645 @@
+/* =========================================================
+   TOP RATED CARS
+========================================================= */
+
+.top-rated-section {
+  width: 100%;
+  padding: 90px 0 100px;
+
+  background: #ffffff;
+
+  overflow: hidden;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   MAIN CONTAINER
+========================================================= */
+
+.top-rated-container {
+  width: calc(100% - 100px);
+
+  max-width: 1500px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.top-rated-header {
+  position: relative;
+
+  width: 100%;
+
+  min-height: 78px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  margin-bottom: 38px;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   CENTER TITLE
+========================================================= */
+
+.top-rated-title {
+  width: 100%;
+
+  text-align: center;
+
+  box-sizing: border-box;
+}
+
+.top-rated-title h2 {
+  margin: 0;
+
+  color: #142a45;
+
+  font-size: 38px;
+
+  line-height: 1.2;
+
+  font-weight: 800;
+
+  letter-spacing: -0.8px;
+
+  text-align: center;
+}
+
+.top-rated-title p {
+  margin: 10px auto 0;
+
+  color: #718197;
+
+  font-size: 15px;
+
+  line-height: 1.6;
+
+  font-weight: 500;
+
+  text-align: center;
+}
+
+/* =========================================================
+   NAVIGATION
+   DESKTOP = RIGHT SIDE
+========================================================= */
+
+.top-rated-navigation {
+  position: absolute;
+
+  right: 0;
+
+  bottom: 0;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  flex-shrink: 0;
+}
+
+/* =========================================================
+   NAVIGATION BUTTON
+========================================================= */
+
+.top-rated-nav-btn {
+  width: 44px;
+
+  height: 44px;
+
+  min-width: 44px;
+
+  min-height: 44px;
+
+  padding: 0;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border: 1px solid #dce7f4;
+
+  border-radius: 50%;
+
+  background: #ffffff;
+
+  color: #1267d8;
+
+  cursor: pointer;
+
+  box-sizing: border-box;
+
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.top-rated-nav-btn svg {
+  width: 19px;
+
+  height: 19px;
+
+  stroke-width: 2.2;
+}
+
+.top-rated-nav-btn:hover:not(:disabled) {
+  background: #1267d8;
+
+  color: #ffffff;
+
+  border-color: #1267d8;
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 10px 24px rgba(18, 103, 216, 0.22);
+}
+
+.top-rated-nav-btn:active:not(:disabled) {
+  transform: scale(0.94);
+}
+
+.top-rated-nav-btn:disabled {
+  opacity: 0.35;
+
+  cursor: not-allowed;
+
+  background: #f5f8fc;
+
+  color: #8092a6;
+
+  border-color: #e3ebf4;
+
+  box-shadow: none;
+}
+
+/* =========================================================
+   SLIDER VIEWPORT
+========================================================= */
+
+.top-rated-slider {
+  width: 100%;
+
+  overflow: hidden;
+
+  padding: 8px 5px 25px;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   SLIDER TRACK
+========================================================= */
+
+.top-rated-track {
+  display: flex;
+
+  align-items: stretch;
+
+  gap: 24px;
+
+  width: max-content;
+
+  transform: translate3d(0, 0, 0);
+
+  transition: transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+
+  will-change: transform;
+}
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.top-rated-card {
+  position: relative;
+
+  flex: 0 0 calc((100vw - 100px - 48px) / 3);
+
+  min-width: 0;
+
+  box-sizing: border-box;
+
+  overflow: hidden;
+
+  border-radius: 20px;
+
+  background: linear-gradient(145deg, #ffffff 0%, #f8fbff 45%, #edf5ff 100%);
+
+  border: 1px solid rgba(74, 137, 197, 0.2);
+
+  box-shadow:
+    0 8px 28px rgba(28, 82, 135, 0.07),
+    0 2px 8px rgba(28, 82, 135, 0.04);
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    border-color 0.35s ease;
+}
+
+/* =========================================================
+   CARD TOP LINE
+========================================================= */
+
+.top-rated-card::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+
+  height: 3px;
+
+  background: linear-gradient(90deg, #1267d8, #58aaff);
+
+  z-index: 5;
+}
+
+/* =========================================================
+   CARD GLOW
+========================================================= */
+
+.top-rated-card::after {
+  content: "";
+
+  position: absolute;
+
+  width: 190px;
+  height: 190px;
+
+  right: -100px;
+  bottom: -115px;
+
+  border-radius: 50%;
+
+  background: radial-gradient(
+    circle,
+    rgba(46, 137, 239, 0.15),
+    rgba(46, 137, 239, 0)
+  );
+
+  pointer-events: none;
+}
+
+/* =========================================================
+   CARD HOVER
+========================================================= */
+
+.top-rated-card:hover {
+  transform: translateY(-8px);
+
+  border-color: rgba(45, 126, 211, 0.38);
+
+  box-shadow:
+    0 22px 45px rgba(30, 83, 135, 0.14),
+    0 8px 18px rgba(30, 83, 135, 0.06);
+}
+
+/* =========================================================
+   IMAGE AREA
+========================================================= */
+
+.top-rated-image {
+  position: relative;
+
+  width: 100%;
+
+  height: 210px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  overflow: hidden;
+
+  background: linear-gradient(145deg, #f7faff 0%, #eef5fc 55%, #e7f1fc 100%);
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   IMAGE GLOW
+========================================================= */
+
+.top-rated-image::after {
+  content: "";
+
+  position: absolute;
+
+  width: 170px;
+
+  height: 75px;
+
+  left: 50%;
+
+  bottom: 3px;
+
+  transform: translateX(-50%);
+
+  border-radius: 50%;
+
+  background: radial-gradient(
+    ellipse,
+    rgba(61, 133, 204, 0.14),
+    transparent 70%
+  );
+
+  pointer-events: none;
+}
+
+/* =========================================================
+   CAR IMAGE
+========================================================= */
+
+.top-rated-image img {
+  width: 100%;
+
+  height: 100%;
+
+  display: block;
+
+  object-fit: contain;
+
+  object-position: center;
+
+  padding: 14px 18px;
+
+  box-sizing: border-box;
+
+  position: relative;
+
+  z-index: 2;
+
+  transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.top-rated-card:hover .top-rated-image img {
+  transform: scale(1.06);
+}
+
+/* =========================================================
+   CARD CONTENT
+========================================================= */
+
+.top-rated-content {
+  position: relative;
+
+  z-index: 3;
+
+  padding: 21px;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   CAR NAME
+========================================================= */
+
+.top-rated-content h3 {
+  margin: 0;
+
+  color: #172c45;
+
+  font-size: 18px;
+
+  line-height: 1.4;
+
+  font-weight: 800;
+
+  letter-spacing: -0.25px;
+}
+
+/* =========================================================
+   PRICE
+========================================================= */
+
+.top-rated-price {
+  display: flex;
+
+  align-items: baseline;
+
+  margin-top: 9px;
+}
+
+.top-rated-price strong {
+  color: #1267d8;
+
+  font-size: 20px;
+
+  line-height: 1;
+
+  font-weight: 800;
+}
+
+.top-rated-price span {
+  margin-left: 5px;
+
+  color: #7b8da2;
+
+  font-size: 12px;
+
+  font-weight: 500;
+}
+
+/* =========================================================
+   DETAILS
+========================================================= */
+
+.top-rated-details {
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  margin-top: 15px;
+
+  padding-top: 14px;
+
+  border-top: 1px solid rgba(111, 145, 177, 0.16);
+}
+
+.top-rated-details span {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 5px;
+
+  color: #65788d;
+
+  font-size: 11px;
+
+  line-height: 1.3;
+
+  font-weight: 600;
+
+  white-space: nowrap;
+}
+
+.top-rated-details svg {
+  width: 14px;
+
+  height: 14px;
+
+  flex-shrink: 0;
+
+  color: #6c849d;
+
+  stroke-width: 2;
+}
+
+/* =========================================================
+   RATING
+========================================================= */
+
+.top-rated-details .top-rated-rating {
+  margin-left: auto;
+
+  color: #d99a18;
+}
+
+.top-rated-rating svg {
+  color: #e2a31b !important;
+}
+/* =========================================================
+   WHAT OUR CUSTOMERS SAY
+========================================================= */
+
+.customer-testimonial-section {
+  width: 100%;
+  margin-top: 70px;
+
+  overflow: hidden;
+
+  border-radius: 0;
+
+  background: linear-gradient(
+    110deg,
+    #075fcf 0%,
+    #126ed8 45%,
+    #287fe0 70%,
+    #4b9cf0 100%
+  );
+
+  position: relative;
+}
+
+/* =========================================================
+   INNER CONTENT
+========================================================= */
+
+.customer-testimonial-content {
+  width: 100%;
+  min-height: 390px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  position: relative;
+}
+
+/* =========================================================
+   LEFT CONTENT
+========================================================= */
+
+.customer-testimonial-text {
+  width: 52%;
+
+  padding: 55px 20px 55px 55px;
+
+  position: relative;
+  z-index: 3;
+
+  color: #ffffff;
+}
+
+/* =========================================================
+   SMALL LABEL
+========================================================= */
+
+.customer-testimonial-label {
+  display: inline-block;
+
+  margin-bottom: 12px;
+
+  font-size: 12px;
+  font-weight: 800;
+
+  letter-spacing: 1.5px;
+
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.customer-testimonial-text h2 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 36px;
+  line-height: 1.2;
+
+  font-weight: 800;
+
+  letter-spacing: -0.7px;
+}
+
+/* =========================================================
+   SUBTITLE
+========================================================= */
+
+.customer-testimonial-subtitle {
+  margin: 10px 0 0;
+
+  color: rgba(255, 255, 255, 0.78);
+
+  font-size: 15px;
+  line-height: 1.6;
+
+  font-weight: 500;
+}
+
+/* =========================================================
+   QUOTE
+========================================================= */
+
+.customer-quote {
+  height: 55px;
+
+  margin-top: 25px;
+
+  color: rgba(255, 255, 255, 0.95);
+
+  font-size: 72px;
+  line-height: 0.8;
+
+  font-family: Georgia, serif;
+
+  font-weight: 700;
+}
+
+/* =========================================================
+   REVIEW
+========================================================= */
+
+.customer-review {
+  max-width: 470px;
+
+  margin: 5px 0 0;
+
+  color: #ffffff;
+
+  font-size: 18px;
+  line-height: 1.65;
+
+  font-weight: 500;
+}
+
+/* =========================================================
+   CUSTOMER INFO
+========================================================= */
+
+.customer-info {
+  display: flex;
+  align-items: center;
+
+  gap: 13px;
+
+  margin-top: 25px;
+}
+
+.customer-avatar {
+  width: 48px;
+  height: 48px;
+
+  flex-shrink: 0;
+
+  overflow: hidden;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.2);
+
+  border: 2px solid rgba(255, 255, 255, 0.6);
+}
+
+.customer-avatar img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+}
+
+.customer-info h4 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.customer-info span {
+  display: block;
+
+  margin-top: 3px;
+
+  color: rgba(255, 255, 255, 0.7);
+
+  font-size: 11px;
+}
+
+/* =========================================================
+   TESTIMONIAL CONTROLS
+========================================================= */
+
+.customer-slider-controls {
+  display: flex;
+
+  gap: 8px;
+
+  margin-top: 22px;
+}
+
+.customer-slider-controls button {
+  width: 34px;
+  height: 34px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+
+  border: 1px solid rgba(255, 255, 255, 0.35);
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.12);
+
+  color: #ffffff;
+
+  cursor: pointer;
+
+  backdrop-filter: blur(8px);
+
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease;
+}
+
+.customer-slider-controls button:hover {
+  background: rgba(255, 255, 255, 0.25);
+
+  transform: translateY(-2px);
+}
+
+/* =========================================================
+   RIGHT IMAGE
+========================================================= */
+
+.customer-testimonial-image {
+  width: 52%;
+  height: 390px;
+
+  position: absolute;
+
+  right: 0;
+  bottom: 0;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+
+  overflow: hidden;
+}
+
+.customer-testimonial-image::before {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background: linear-gradient(
+    90deg,
+    #126ed8 0%,
+    rgba(18, 110, 216, 0.75) 15%,
+    rgba(18, 110, 216, 0.15) 55%,
+    transparent 100%
+  );
+
+  z-index: 2;
+
+  pointer-events: none;
+}
+
+.customer-testimonial-image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+  object-position: right center;
+
+  position: relative;
+  z-index: 1;
+}
+
+/* =========================================================
+   LARGE DESKTOP
+========================================================= */
+
+@media (min-width: 1400px) {
+  .customer-testimonial-section {
+    margin-top: 80px;
+  }
+
+  .customer-testimonial-content {
+    min-height: 430px;
+  }
+
+  .customer-testimonial-text {
+    padding-left: 65px;
+  }
+
+  .customer-testimonial-text h2 {
+    font-size: 40px;
+  }
+
+  .customer-review {
+    font-size: 19px;
+  }
+
+  .customer-testimonial-image {
+    height: 430px;
+  }
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1050px) {
+  .customer-testimonial-section {
+    margin-top: 60px;
+  }
+
+  .customer-testimonial-content {
+    min-height: 350px;
+  }
+
+  .customer-testimonial-text {
+    width: 55%;
+
+    padding: 45px 20px 45px 35px;
+  }
+
+  .customer-testimonial-text h2 {
+    font-size: 30px;
+  }
+
+  .customer-review {
+    max-width: 400px;
+
+    font-size: 16px;
+  }
+
+  .customer-testimonial-image {
+    width: 55%;
+    height: 350px;
+  }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+  .customer-testimonial-section {
+    margin-top: 45px;
+
+    border-radius: 0;
+  }
+
+  .customer-testimonial-content {
+    min-height: auto;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: stretch;
+  }
+
+  /* LEFT */
+
+  .customer-testimonial-text {
+    width: 100%;
+
+    padding: 40px 25px 30px;
+  }
+
+  .customer-testimonial-text h2 {
+    font-size: 29px;
+  }
+
+  .customer-testimonial-subtitle {
+    font-size: 13px;
+  }
+
+  .customer-quote {
+    margin-top: 20px;
+
+    font-size: 58px;
+  }
+
+  .customer-review {
+    max-width: 100%;
+
+    font-size: 16px;
+  }
+
+  .customer-info {
+    margin-top: 20px;
+  }
+
+  /* IMAGE */
+
+  .customer-testimonial-image {
+    width: 100%;
+    height: 250px;
+
+    position: relative;
+
+    right: auto;
+    bottom: auto;
+  }
+
+  .customer-testimonial-image::before {
+    background: linear-gradient(
+      180deg,
+      #126ed8 0%,
+      rgba(18, 110, 216, 0.35) 20%,
+      transparent 55%
+    );
+  }
+
+  .customer-testimonial-image img {
+    object-position: center;
+  }
+}
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 420px) {
+  .customer-testimonial-text {
+    padding: 35px 18px 25px;
+  }
+
+  .customer-testimonial-text h2 {
+    font-size: 25px;
+  }
+
+  .customer-testimonial-subtitle {
+    font-size: 12px;
+  }
+
+  .customer-review {
+    font-size: 14px;
+  }
+
+  .customer-avatar {
+    width: 43px;
+    height: 43px;
+  }
+
+  .customer-info h4 {
+    font-size: 13px;
+  }
+
+  .customer-testimonial-image {
+    height: 210px;
+  }
+}
+
+/* =========================================================
+   LARGE DESKTOP
+========================================================= */
+
+@media (min-width: 1400px) {
+  .top-rated-section {
+    padding: 105px 0 115px;
+  }
+
+  .top-rated-container {
+    width: calc(100% - 120px);
+  }
+
+  .top-rated-header {
+    min-height: 85px;
+
+    margin-bottom: 42px;
+  }
+
+  .top-rated-title h2 {
+    font-size: 42px;
+  }
+
+  .top-rated-title p {
+    font-size: 16px;
+  }
+
+  .top-rated-navigation {
+    gap: 12px;
+  }
+
+  .top-rated-nav-btn {
+    width: 46px;
+
+    height: 46px;
+
+    min-width: 46px;
+
+    min-height: 46px;
+  }
+
+  .top-rated-track {
+    gap: 28px;
+  }
+
+  .top-rated-card {
+    flex-basis: calc((100vw - 120px - 56px) / 3);
+  }
+
+  .top-rated-image {
+    height: 235px;
+  }
+
+  .top-rated-content {
+    padding: 24px;
+  }
+
+  .top-rated-content h3 {
+    font-size: 19px;
+  }
+
+  .top-rated-price strong {
+    font-size: 21px;
+  }
+
+  .top-rated-details span {
+    font-size: 12px;
+  }
+}
+
+/* =========================================================
+   LAPTOP
+========================================================= */
+
+@media (max-width: 1200px) {
+  .top-rated-container {
+    width: calc(100% - 80px);
+  }
+
+  .top-rated-header {
+    min-height: 75px;
+  }
+
+  .top-rated-track {
+    gap: 20px;
+  }
+
+  .top-rated-card {
+    flex-basis: calc((100vw - 80px - 40px) / 3);
+  }
+
+  .top-rated-image {
+    height: 190px;
+  }
+
+  .top-rated-content {
+    padding: 19px;
+  }
+
+  .top-rated-content h3 {
+    font-size: 16px;
+  }
+
+  .top-rated-price strong {
+    font-size: 18px;
+  }
+
+  .top-rated-details {
+    gap: 10px;
+  }
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+  .top-rated-section {
+    padding: 75px 0 80px;
+  }
+
+  .top-rated-container {
+    width: calc(100% - 60px);
+  }
+
+  .top-rated-header {
+    min-height: 70px;
+
+    margin-bottom: 30px;
+  }
+
+  .top-rated-title h2 {
+    font-size: 32px;
+  }
+
+  .top-rated-title p {
+    font-size: 14px;
+  }
+
+  .top-rated-navigation {
+    right: 0;
+
+    gap: 8px;
+  }
+
+  .top-rated-nav-btn {
+    width: 40px;
+
+    height: 40px;
+
+    min-width: 40px;
+
+    min-height: 40px;
+  }
+
+  /* =======================================================
+     2 CARDS ON TABLET
+  ======================================================= */
+
+  .top-rated-track {
+    gap: 18px;
+  }
+
+  .top-rated-card {
+    flex: 0 0 calc((100vw - 60px - 18px) / 2);
+  }
+
+  .top-rated-image {
+    height: 180px;
+  }
+
+  .top-rated-content {
+    padding: 18px;
+  }
+
+  .top-rated-content h3 {
+    font-size: 16px;
+  }
+
+  .top-rated-price strong {
+    font-size: 17px;
+  }
+
+  .top-rated-details {
+    gap: 9px;
+  }
+
+  .top-rated-details span {
+    font-size: 10px;
+  }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+  .top-rated-section {
+    padding: 60px 0 70px;
+
+    overflow: hidden;
+  }
+
+  /* =======================================================
+     CONTAINER
+  ======================================================= */
+
+  .top-rated-container {
+    width: calc(100% - 30px);
+
+    margin-left: auto;
+
+    margin-right: auto;
+  }
+
+  /* =======================================================
+     HEADER
+     MOBILE = COLUMN
+  ======================================================= */
+
+  .top-rated-header {
+    position: relative;
+
+    min-height: auto;
+
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 16px;
+
+    margin-bottom: 25px;
+
+    text-align: center;
+  }
+
+  /* =======================================================
+     TITLE
+  ======================================================= */
+
+  .top-rated-title {
+    width: 100%;
+
+    text-align: center;
+  }
+
+  .top-rated-title h2 {
+    margin: 0;
+
+    font-size: 30px;
+
+    line-height: 1.25;
+
+    letter-spacing: -0.5px;
+
+    text-align: center;
+  }
+
+  .top-rated-title p {
+    margin: 7px auto 0;
+
+    max-width: 330px;
+
+    color: #718197;
+
+    font-size: 16px;
+
+    line-height: 1.5;
+
+    text-align: center;
+  }
+
+  /* =======================================================
+     NAVIGATION
+     MOBILE = BELOW PARAGRAPH
+  ======================================================= */
+
+  .top-rated-navigation {
+    position: static;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 7px;
+
+    margin-top: 1px;
+  }
+
+  .top-rated-nav-btn {
+    width: 38px;
+
+    height: 38px;
+
+    min-width: 38px;
+
+    min-height: 38px;
+  }
+
+  .top-rated-nav-btn svg {
+    width: 17px;
+
+    height: 17px;
+  }
+
+  /* =======================================================
+     SLIDER
+  ======================================================= */
+
+  .top-rated-slider {
+    width: 100%;
+
+    overflow: hidden;
+
+    padding: 8px 0 22px;
+
+    box-sizing: border-box;
+  }
+
+  .top-rated-track {
+    display: flex;
+
+    gap: 14px;
+
+    width: max-content;
+
+    transition: transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+
+    will-change: transform;
+  }
+
+  /* =======================================================
+     ONE CARD ON MOBILE
+  ======================================================= */
+
+  .top-rated-card {
+    flex: 0 0 calc(100vw - 30px);
+
+    width: calc(100vw - 30px);
+
+    min-width: calc(100vw - 30px);
+
+    max-width: calc(100vw - 30px);
+
+    border-radius: 18px;
+  }
+
+  /* =======================================================
+     IMAGE
+  ======================================================= */
+
+  .top-rated-image {
+    width: 100%;
+
+    height: 205px;
+  }
+
+  .top-rated-image img {
+    padding: 15px 20px;
+  }
+
+  /* =======================================================
+     CONTENT
+  ======================================================= */
+
+  .top-rated-content {
+    padding: 19px;
+  }
+
+  .top-rated-content h3 {
+    font-size: 17px;
+
+    line-height: 1.4;
+  }
+
+  .top-rated-price {
+    margin-top: 8px;
+  }
+
+  .top-rated-price strong {
+    font-size: 18px;
+  }
+
+  .top-rated-price span {
+    font-size: 14px;
+  }
+
+  /* =======================================================
+     DETAILS
+  ======================================================= */
+
+  .top-rated-details {
+    gap: 12px;
+
+    margin-top: 14px;
+
+    padding-top: 13px;
+  }
+
+  .top-rated-details span {
+    font-size: 14px;
+
+    gap: 4px;
+  }
+
+  .top-rated-details svg {
+    width: 13px;
+
+    height: 13px;
+  }
+}
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 420px) {
+  .top-rated-section {
+    padding: 50px 0 60px;
+  }
+
+  /* CONTAINER */
+
+  .top-rated-container {
+    width: calc(100% - 24px);
+  }
+
+  /* HEADER */
+
+  .top-rated-header {
+    gap: 14px;
+
+    margin-bottom: 22px;
+  }
+
+  /* TITLE */
+
+  .top-rated-title h2 {
+    font-size: 24px;
+
+    line-height: 1.25;
+  }
+
+  .top-rated-title p {
+    max-width: 290px;
+
+    font-size: 11px;
+
+    line-height: 1.5;
+  }
+
+  /* NAVIGATION */
+
+  .top-rated-navigation {
+    gap: 6px;
+
+    margin-top: 0;
+  }
+
+  .top-rated-nav-btn {
+    width: 35px;
+
+    height: 35px;
+
+    min-width: 35px;
+
+    min-height: 35px;
+  }
+
+  .top-rated-nav-btn svg {
+    width: 16px;
+
+    height: 16px;
+  }
+
+  /* SLIDER */
+
+  .top-rated-slider {
+    padding: 7px 0 20px;
+  }
+
+  .top-rated-track {
+    gap: 11px;
+  }
+
+  /* CARD */
+
+  .top-rated-card {
+    flex: 0 0 calc(100vw - 24px);
+
+    width: calc(100vw - 24px);
+
+    min-width: calc(100vw - 24px);
+
+    max-width: calc(100vw - 24px);
+  }
+
+  /* IMAGE */
+
+  .top-rated-image {
+    height: 180px;
+  }
+
+  /* CONTENT */
+
+  .top-rated-content {
+    padding: 17px;
+  }
+
+  .top-rated-content h3 {
+    font-size: 15px;
+  }
+
+  .top-rated-price strong {
+    font-size: 17px;
+  }
+
+  /* DETAILS */
+
+  .top-rated-details {
+    gap: 9px;
+  }
+
+  .top-rated-details span {
+    font-size: 9px;
+  }
+
+  .top-rated-details svg {
+    width: 12px;
+
+    height: 12px;
+  }
+}
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 360px) {
+  .top-rated-container {
+    width: calc(100% - 20px);
+  }
+
+  .top-rated-header {
+    gap: 12px;
+  }
+
+  .top-rated-title h2 {
+    font-size: 22px;
+  }
+
+  .top-rated-title p {
+    max-width: 270px;
+
+    font-size: 10px;
+  }
+
+  .top-rated-navigation {
+    gap: 5px;
+  }
+
+  .top-rated-nav-btn {
+    width: 32px;
+
+    height: 32px;
+
+    min-width: 32px;
+
+    min-height: 32px;
+  }
+
+  .top-rated-track {
+    gap: 10px;
+  }
+
+  .top-rated-card {
+    flex: 0 0 calc(100vw - 20px);
+
+    width: calc(100vw - 20px);
+
+    min-width: calc(100vw - 20px);
+
+    max-width: calc(100vw - 20px);
+  }
+
+  .top-rated-image {
+    height: 165px;
+  }
+
+  .top-rated-content {
+    padding: 15px;
+  }
+
+  .top-rated-content h3 {
+    font-size: 14px;
+  }
+
+  .top-rated-price strong {
+    font-size: 16px;
+  }
+
+  .top-rated-details {
+    gap: 7px;
+  }
+
+  .top-rated-details span {
+    font-size: 8px;
+  }
+
+  .top-rated-details svg {
+    width: 11px;
+
+    height: 11px;
+  }
+}
+
+/* =========================================================
+   FOCUS ACCESSIBILITY
+========================================================= */
+
+.top-rated-nav-btn:focus-visible {
+  outline: 3px solid rgba(18, 103, 216, 0.25);
+
+  outline-offset: 3px;
+}
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .top-rated-track,
+  .top-rated-card,
+  .top-rated-image img,
+  .top-rated-nav-btn {
+    transition: none;
+  }
+}

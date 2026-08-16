@@ -1,0 +1,795 @@
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero {
+  position: relative;
+
+  width: 100%;
+  min-height: 750px;
+
+  background: #f5f9fd;
+}
+
+/* =========================================================
+   BACKGROUND
+========================================================= */
+
+.hero-bg {
+  position: absolute;
+
+  inset: 0;
+
+  z-index: 0;
+
+  background-image:
+    linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.96) 0%,
+      rgba(255, 255, 255, 0.75) 18%,
+      rgba(255, 255, 255, 0.15) 42%,
+      rgba(255, 255, 255, 0) 62%,
+      rgba(255, 255, 255, 0.35) 100%
+    ),
+    url("/assets/hero-bg.png");
+
+  background-size: cover;
+  background-position: center center;
+
+  background-repeat: no-repeat;
+}
+
+/* =========================================================
+   HERO CONTENT
+========================================================= */
+
+.hero-content {
+  position: relative;
+
+  z-index: 2;
+
+  width: 100%;
+
+  padding-top: 50px;
+  padding-bottom: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.hero-heading {
+  width: 100%;
+
+  text-align: center;
+}
+
+.hero-heading h1 {
+  margin: 0;
+
+  color: #101c30;
+
+  font-size: clamp(38px, 4.1vw, 57px);
+
+  line-height: 1.02;
+
+  font-weight: 800;
+
+  letter-spacing: -2px;
+}
+
+.hero-heading h1 span {
+  display: block;
+
+  color: #0866d8;
+
+  margin-top: 2px;
+}
+
+.hero-heading p {
+  margin: 12px auto 0;
+
+  color: #f4f5f4;
+
+  font-size: 15px;
+
+  line-height: 1.6;
+
+  font-weight: 400;
+}
+
+/* =========================================================
+   SEARCH BOX
+========================================================= */
+
+.hero-search-box {
+  position: relative;
+
+  z-index: 10;
+
+  width: min(940px, calc(100% - 50px));
+
+  min-height: 84px;
+
+  margin-top: 30px;
+
+  padding: 8px;
+
+  display: grid;
+
+  grid-template-columns:
+    1.15fr
+    1.15fr
+    1fr
+    1fr
+    120px;
+
+  align-items: stretch;
+
+  gap: 4px;
+
+  background: #ffffff;
+
+  border: 1px solid rgba(225, 233, 242, 0.95);
+
+  border-radius: 10px;
+
+  box-shadow: 0 10px 30px rgba(33, 59, 90, 0.16);
+}
+
+/* =========================================================
+   SEARCH ITEM
+========================================================= */
+
+.hero-search-item {
+  min-width: 0;
+
+  padding: 11px 14px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  border-right: 1px solid #edf1f5;
+}
+
+/* =========================================================
+   SEARCH ICON
+========================================================= */
+
+.hero-search-icon {
+  width: 30px;
+  height: 30px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  color: #0866d8;
+
+  background: #f0f6ff;
+
+  border-radius: 6px;
+}
+
+.hero-search-icon svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* =========================================================
+   SEARCH TEXT
+========================================================= */
+
+.hero-search-text {
+  min-width: 0;
+  width: 100%;
+}
+
+.hero-search-text label {
+  display: block;
+
+  margin-bottom: 4px;
+
+  color: #8995a5;
+
+  font-size: 11px;
+
+  line-height: 1;
+
+  font-weight: 500;
+
+  white-space: nowrap;
+}
+
+.hero-search-text select,
+.hero-search-text input[type="date"] {
+  width: 100%;
+
+  border: none;
+  outline: none;
+
+  padding: 0;
+
+  background: transparent;
+
+  color: #27364a;
+
+  font-size: 13px;
+
+  line-height: 1.3;
+
+  font-weight: 600;
+  font-family: inherit;
+
+  appearance: none;
+  -webkit-appearance: none;
+
+  cursor: pointer;
+}
+
+.hero-search-text select:invalid,
+.hero-search-text input[type="date"]:not([value]),
+.hero-search-text input[type="date"].empty {
+  color: #8995a5;
+  font-weight: 500;
+}
+
+.hero-search-text select option {
+  color: #27364a;
+}
+
+/* =========================================================
+   FIND CAR BUTTON
+========================================================= */
+
+.hero-search-btn {
+  width: 100%;
+
+  border: none;
+
+  border-radius: 7px;
+
+  background: #0b1e3f;
+
+  color: #ffffff;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 7px;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.hero-search-btn:hover {
+  background: #142a52;
+
+  transform: translateY(-1px);
+
+  box-shadow: 0 6px 15px rgba(11, 30, 63, 0.3);
+}
+
+.hero-search-btn svg {
+  width: 15px;
+  height: 15px;
+}
+
+/* =========================================================
+   SEARCH ERROR
+========================================================= */
+
+.hero-search-error {
+  width: min(940px, calc(100% - 50px));
+
+  margin: 12px auto 0;
+
+  padding: 10px 16px;
+
+  border-radius: 7px;
+
+  background: #fdecec;
+
+  color: #b3261e;
+
+  font-size: 12px;
+
+  font-weight: 500;
+
+  text-align: center;
+}
+
+/* =========================================================
+   CAR
+========================================================= */
+
+.hero-car {
+  position: relative;
+
+  z-index: 5;
+
+  width: min(560px, 48vw);
+
+  margin: 40px auto -10px;
+
+  pointer-events: none;
+}
+
+.hero-car img {
+  width: 100%;
+
+  height: auto;
+
+  display: block;
+
+  object-fit: contain;
+
+  filter: drop-shadow(0 18px 15px rgba(0, 0, 0, 0.25));
+}
+
+/* =========================================================
+   FEATURES
+========================================================= */
+
+.hero-features {
+  position: relative;
+
+  z-index: 20;
+
+  width: 100%;
+
+  min-height: 100px;
+
+  background: #ffffff;
+
+  border-top: 1px solid rgba(229, 235, 242, 0.8);
+}
+
+/* =========================================================
+   FEATURES INNER
+========================================================= */
+
+.hero-features-inner {
+  width: min(1180px, calc(100% - 70px));
+
+  min-height: 100px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  align-items: center;
+
+  gap: 30px;
+}
+
+/* =========================================================
+   FEATURE
+========================================================= */
+
+.hero-feature {
+  min-width: 0;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+}
+
+/* =========================================================
+   FEATURE ICON
+========================================================= */
+
+.hero-feature-icon {
+  width: 40px;
+  height: 40px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  color: #0866d8;
+
+  background: #edf5ff;
+
+  border-radius: 8px;
+}
+
+.hero-feature-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* =========================================================
+   FEATURE TEXT
+========================================================= */
+
+.hero-feature h3 {
+  margin: 0;
+
+  color: #1e2d42;
+
+  font-size: 14px;
+
+  line-height: 1.3;
+
+  font-weight: 700;
+}
+
+.hero-feature p {
+  margin: 4px 0 0;
+
+  color: #8a96a5;
+
+  font-size: 12px;
+
+  line-height: 1.3;
+}
+
+/* =========================================================
+   LARGE DESKTOP
+========================================================= */
+
+@media (min-width: 1400px) {
+  .hero {
+    min-height: 800px;
+  }
+
+  .hero-content {
+    padding-top: 58px;
+  }
+
+  .hero-heading h1 {
+    font-size: 60px;
+  }
+
+  .hero-heading p {
+    font-size: 13px;
+  }
+
+  .hero-search-box {
+    width: 930px;
+
+    min-height: 74px;
+
+    margin-top: 30px;
+  }
+
+  .hero-car {
+    width: 600px;
+
+    margin: 44px auto -10px;
+  }
+
+  .hero-features,
+  .hero-features-inner {
+    min-height: 100px;
+  }
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+  .hero {
+    min-height: 680px;
+  }
+
+  .hero-content {
+    padding-top: 45px;
+  }
+
+  .hero-heading h1 {
+    font-size: 43px;
+
+    letter-spacing: -1.5px;
+  }
+
+  .hero-heading p {
+    font-size: 16px;
+  }
+
+  .hero-search-box {
+    width: calc(100% - 70px);
+
+    min-height: 66px;
+
+    grid-template-columns:
+      1.15fr
+      1.15fr
+      1fr
+      1fr
+      95px;
+  }
+
+  .hero-search-item {
+    padding: 8px;
+  }
+
+  .hero-search-icon {
+    width: 27px;
+    height: 27px;
+  }
+
+  .hero-search-icon svg {
+    width: 14px;
+    height: 14px;
+  }
+
+  .hero-search-text label {
+    font-size: 10px;
+  }
+
+  .hero-search-text select,
+  .hero-search-text input[type="date"] {
+    font-size: 11px;
+  }
+
+  .hero-search-btn {
+    font-size: 12px;
+  }
+
+  .hero-car {
+    width: 500px;
+
+    margin: 34px auto -8px;
+  }
+
+  .hero-features-inner {
+    width: calc(100% - 50px);
+
+    gap: 20px;
+  }
+
+  .hero-feature-icon {
+    width: 35px;
+    height: 35px;
+  }
+
+  .hero-feature h3 {
+    font-size: 13px;
+  }
+
+  .hero-feature p {
+    font-size: 11px;
+  }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+  .hero {
+    min-height: auto;
+
+    background: #f4f8fd;
+  }
+
+  .hero-bg {
+    background-image:
+      linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.98) 0%,
+        rgba(255, 255, 255, 0.8) 22%,
+        rgba(255, 255, 255, 0.2) 45%,
+        rgba(255, 255, 255, 0) 65%,
+        rgba(255, 255, 255, 0.4) 100%
+      ),
+      url("/assets/hero-bg.jpg");
+
+    background-position: center center;
+  }
+
+  .hero-content {
+    padding-top: 38px;
+    padding-bottom: 15px;
+  }
+
+  /* Heading */
+
+  .hero-heading h1 {
+    padding: 0 15px;
+
+    font-size: 34px;
+
+    line-height: 1.08;
+
+    letter-spacing: -1px;
+  }
+
+  .hero-heading h1 span {
+    margin-top: 2px;
+  }
+
+  .hero-heading p {
+    padding: 0 20px;
+
+    font-size: 15px;
+
+    line-height: 1.6;
+  }
+
+  /* Search */
+
+  .hero-search-box {
+    width: calc(100% - 30px);
+
+    margin-top: 22px;
+
+    padding: 6px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 0;
+
+    border-radius: 9px;
+  }
+
+  .hero-search-item {
+    min-height: 48px;
+
+    padding: 7px 9px;
+
+    border-right: none;
+
+    border-bottom: 1px solid #edf1f5;
+  }
+
+  .hero-search-item:last-of-type {
+    border-bottom: none;
+  }
+
+  .hero-search-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .hero-search-icon svg {
+    width: 14px;
+    height: 14px;
+  }
+
+  .hero-search-text label {
+    font-size: 13px;
+  }
+
+  .hero-search-text select,
+  .hero-search-text input[type="date"] {
+    font-size: 15px;
+  }
+
+  .hero-search-btn {
+    min-height: 46px;
+    margin-top: 34px;
+    font-size: 16px;
+  }
+
+  /* Car */
+
+  .hero-car {
+    width: 92vw;
+
+    max-width: 440px;
+
+    margin: 26px auto -6px;
+  }
+
+  /* Features */
+
+  .hero-features {
+    min-height: auto;
+    padding: 22px 0;
+    margin-top: 25px;
+  }
+
+  .hero-features-inner {
+    width: calc(100% - 30px);
+
+    min-height: auto;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px 15px;
+  }
+
+  .hero-feature {
+    gap: 8px;
+  }
+
+  .hero-feature-icon {
+    width: 34px;
+    height: 34px;
+  }
+
+  .hero-feature-icon svg {
+    width: 17px;
+    height: 17px;
+  }
+
+  .hero-feature h3 {
+    font-size: 15px;
+  }
+
+  .hero-feature p {
+    font-size: 13px;
+
+    line-height: 1.4;
+  }
+}
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 420px) {
+  .hero-content {
+    padding-top: 32px;
+  }
+
+  .hero-heading h1 {
+    font-size: 30px;
+
+    letter-spacing: -0.7px;
+  }
+
+  .hero-heading p {
+    font-size: 11px;
+  }
+
+  .hero-search-box {
+    width: calc(100% - 24px);
+  }
+
+  .hero-car {
+    width: 96vw;
+
+    margin: 22px auto -6px;
+  }
+
+  .hero-features-inner {
+    width: calc(100% - 24px);
+
+    gap: 18px 10px;
+  }
+
+  .hero-feature-icon {
+    width: 31px;
+    height: 31px;
+  }
+
+  .hero-feature h3 {
+    font-size: 11px;
+  }
+
+  .hero-feature p {
+    font-size: 9px;
+  }
+}

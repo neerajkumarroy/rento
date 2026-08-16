@@ -1,0 +1,1019 @@
+/* =====================================================
+   EXPERT TEAM
+   FONT: POPPINS
+===================================================== */
+
+.expert-team-section {
+  position: relative;
+
+  width: 100%;
+
+  padding: 75px 15px 70px;
+
+  overflow: hidden;
+
+  box-sizing: border-box;
+
+  background: radial-gradient(
+    circle at 50% 45%,
+    rgba(255, 255, 255, 0.95),
+    rgba(245, 249, 253, 0.96)
+  );
+
+  font-family: "Poppins", sans-serif;
+}
+
+/* =====================================================
+   MAIN CONTAINER
+===================================================== */
+
+.expert-team-container {
+  position: relative;
+
+  z-index: 5;
+
+  width: 100%;
+
+  max-width: 1400px;
+
+  margin: 0 auto;
+
+  padding: 0 15px;
+
+  box-sizing: border-box;
+}
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.expert-team-header {
+  text-align: center;
+
+  margin-bottom: 60px;
+}
+
+/* =====================================================
+   MEET OUR
+===================================================== */
+
+.team-small-title {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 22px;
+
+  margin-bottom: 14px;
+}
+
+.team-small-title span {
+  width: 68px;
+
+  height: 2px;
+
+  display: block;
+
+  background: #f28a20;
+}
+
+.team-small-title p {
+  margin: 0;
+  color: #e98520;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  text-transform: none;
+}
+
+/* =====================================================
+   MAIN TITLE
+===================================================== */
+
+.expert-team-header h2 {
+  margin: 0;
+  color: #101e35;
+  font-size: 42px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1.2;
+  text-transform: none;
+}
+
+/* =====================================================
+   DESCRIPTION
+===================================================== */
+
+.team-description {
+  margin: 15px auto 0;
+  max-width: 850px;
+  color: #29364d;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+/* =====================================================
+   ORANGE HEADING LINE
+===================================================== */
+
+.team-heading-line {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 10px;
+
+  margin-top: 22px;
+}
+
+.team-heading-line span {
+  width: 100px;
+
+  height: 5px;
+
+  border-radius: 10px;
+
+  background: #f28a20;
+}
+
+.team-heading-line i {
+  width: 8px;
+  height: 8px;
+
+  display: block;
+
+  border-radius: 50%;
+
+  background: #f28a20;
+}
+
+/* =====================================================
+   TEAM GRID
+===================================================== */
+
+.expert-team-grid {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+
+  gap: 30px;
+
+  align-items: stretch;
+}
+
+/* =====================================================
+   CARD
+===================================================== */
+
+.expert-team-card {
+  position: relative;
+
+  min-width: 0;
+
+  overflow: hidden;
+
+  padding: 0px 22px 25px;
+
+  box-sizing: border-box;
+
+  text-align: center;
+
+  border-radius: 20px;
+
+  background: rgba(255, 255, 255, 0.94);
+
+  border: 1px solid rgba(225, 231, 239, 0.8);
+
+  box-shadow: 0 12px 35px rgba(35, 60, 90, 0.08);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.expert-team-card:hover {
+  transform: translateY(-8px);
+
+  box-shadow: 0 20px 45px rgba(35, 60, 90, 0.14);
+}
+
+/* =====================================================
+   CARD DOTS
+===================================================== */
+
+.card-dots {
+  position: absolute;
+
+  top: 20px;
+  left: 18px;
+
+  width: 28px;
+
+  display: grid;
+
+  grid-template-columns: repeat(2, 5px);
+
+  gap: 5px;
+
+  z-index: 4;
+}
+
+.card-dots span {
+  width: 5px;
+  height: 5px;
+
+  border-radius: 50%;
+
+  background: #dce7f2;
+}
+
+/* =====================================================
+   IMAGE
+===================================================== */
+
+.expert-team-image {
+  position: relative;
+
+  width: 100%;
+
+  height: 330px;
+
+  overflow: hidden;
+
+  display: flex;
+
+  align-items: flex-end;
+
+  justify-content: center;
+
+  border-radius: 16px;
+
+  background: #f4f7fa;
+}
+
+/* Circular background behind person */
+
+.team-image-circle {
+  position: absolute;
+
+  width: 78%;
+
+  aspect-ratio: 1 / 1;
+
+  left: 50%;
+  top: 8%;
+
+  transform: translateX(-50%);
+
+  border-radius: 50%;
+
+  background: linear-gradient(145deg, #eaf1f8, #dce7f1);
+
+  z-index: 0;
+}
+
+/* =====================================================
+   PERSON IMAGE
+===================================================== */
+
+.expert-team-image img {
+  position: relative;
+
+  z-index: 2;
+
+  width: 100%;
+
+  height: 100%;
+
+  display: block;
+
+  object-fit: contain;
+
+  object-position: center bottom;
+
+  transition: transform 0.35s ease;
+}
+
+.expert-team-card:hover .expert-team-image img {
+  transform: scale(1.025);
+}
+
+/* =====================================================
+   INFO
+===================================================== */
+
+.expert-team-info {
+  padding-top: 18px;
+}
+
+.expert-team-info h3 {
+  margin: 0;
+
+  color: #102039;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  line-height: 1.3;
+}
+
+.expert-team-info p {
+  margin: 5px 0 0;
+
+  color: #43516a;
+
+  font-size: 16px;
+
+  font-weight: 400;
+
+  line-height: 1.4;
+}
+
+/* =====================================================
+   ORANGE MEMBER LINE
+===================================================== */
+
+.team-member-line {
+  width: 50px;
+
+  height: 3px;
+
+  margin: 16px auto 0;
+
+  border-radius: 10px;
+
+  background: #f28a20;
+}
+
+/* =====================================================
+   SOCIAL ICONS
+===================================================== */
+
+.team-socials {
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 22px;
+
+  margin-top: 22px;
+}
+
+.team-socials a {
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #102039;
+
+  text-decoration: none;
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease;
+}
+
+.team-socials a:hover {
+  transform: translateY(-3px);
+
+  background: #f28a20;
+}
+
+.team-socials svg {
+  width: 19px;
+  height: 19px;
+
+  fill: #ffffff;
+}
+
+/* =====================================================
+   BACKGROUND DOTS
+===================================================== */
+
+.team-bg-dots {
+  position: absolute;
+
+  z-index: 1;
+
+  width: 145px;
+  height: 100px;
+
+  opacity: 0.8;
+
+  background-image: radial-gradient(circle, #d5e2ef 4px, transparent 4px);
+
+  background-size: 32px 29px;
+}
+
+.team-bg-dots-left {
+  top: 125px;
+  left: 25px;
+}
+
+.team-bg-dots-right {
+  right: 20px;
+  bottom: 100px;
+}
+
+/* =====================================================
+   BACKGROUND CIRCLES
+===================================================== */
+
+.team-bg-circle {
+  position: absolute;
+
+  z-index: 0;
+
+  border-radius: 50%;
+
+  border: 55px solid rgba(245, 137, 32, 0.13);
+
+  pointer-events: none;
+}
+
+.team-bg-circle-top {
+  width: 170px;
+  height: 170px;
+
+  top: -110px;
+  right: -25px;
+}
+
+.team-bg-circle-bottom {
+  width: 210px;
+  height: 210px;
+
+  bottom: -170px;
+  left: -90px;
+
+  border-color: rgba(215, 229, 243, 0.7);
+}
+
+/* =====================================================
+   DECORATIVE WAVY LINES
+===================================================== */
+
+.team-bg-lines {
+  position: absolute;
+
+  z-index: 0;
+
+  width: 330px;
+  height: 330px;
+
+  opacity: 0.55;
+
+  border-radius: 50%;
+
+  border: 1px solid rgba(207, 220, 234, 0.65);
+
+  pointer-events: none;
+}
+
+.team-bg-lines::before,
+.team-bg-lines::after {
+  content: "";
+
+  position: absolute;
+
+  inset: 22px;
+
+  border-radius: 50%;
+
+  border: 1px solid rgba(207, 220, 234, 0.55);
+}
+
+.team-bg-lines::after {
+  inset: 45px;
+
+  border-color: rgba(207, 220, 234, 0.45);
+}
+
+.team-bg-lines-left {
+  top: -170px;
+  left: 100px;
+}
+
+.team-bg-lines-right {
+  right: -80px;
+  bottom: -150px;
+}
+
+/* =====================================================
+   LARGE DESKTOP
+===================================================== */
+
+@media (min-width: 1600px) {
+  .expert-team-section {
+    padding-top: 85px;
+    padding-bottom: 80px;
+  }
+
+  .expert-team-container {
+    max-width: 1400px;
+  }
+
+  .expert-team-header {
+    margin-bottom: 65px;
+  }
+
+  .expert-team-grid {
+    gap: 32px;
+  }
+
+  .expert-team-image {
+    height: 350px;
+  }
+}
+
+/* =====================================================
+   LAPTOP
+===================================================== */
+
+@media (min-width: 1200px) and (max-width: 1599px) {
+  .expert-team-header h2 {
+    font-size: 70px;
+  }
+
+  .team-small-title p {
+    font-size: 27px;
+  }
+
+  .team-description {
+    font-size: 19px;
+  }
+
+  .expert-team-grid {
+    gap: 24px;
+  }
+
+  .expert-team-image {
+    height: 285px;
+  }
+
+  .expert-team-info h3 {
+    font-size: 20px;
+  }
+
+  .expert-team-info p {
+    font-size: 15px;
+  }
+
+  .team-socials {
+    gap: 17px;
+  }
+}
+
+/* =====================================================
+   SMALL LAPTOP
+===================================================== */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .expert-team-section {
+    padding: 60px 15px;
+  }
+
+  .expert-team-header {
+    margin-bottom: 45px;
+  }
+
+  .team-small-title p {
+    font-size: 23px;
+
+    letter-spacing: 4px;
+  }
+
+  .team-small-title span {
+    width: 50px;
+  }
+
+  .expert-team-header h2 {
+    font-size: 58px;
+  }
+
+  .team-description {
+    font-size: 16px;
+  }
+
+  .expert-team-grid {
+    gap: 18px;
+  }
+
+  .expert-team-card {
+    padding: 16px 15px 20px;
+
+    border-radius: 16px;
+  }
+
+  .expert-team-image {
+    height: 235px;
+  }
+
+  .expert-team-info {
+    padding-top: 13px;
+  }
+
+  .expert-team-info h3 {
+    font-size: 17px;
+  }
+
+  .expert-team-info p {
+    font-size: 13px;
+  }
+
+  .team-socials {
+    gap: 12px;
+
+    margin-top: 17px;
+  }
+
+  .team-socials a {
+    width: 33px;
+    height: 33px;
+  }
+
+  .team-socials svg {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .expert-team-section {
+    padding: 55px 15px;
+  }
+
+  .expert-team-header {
+    margin-bottom: 40px;
+  }
+
+  .team-small-title p {
+    font-size: 21px;
+
+    letter-spacing: 3px;
+  }
+
+  .team-small-title span {
+    width: 45px;
+  }
+
+  .expert-team-header h2 {
+    font-size: 52px;
+  }
+
+  .team-description {
+    font-size: 15px;
+
+    line-height: 1.6;
+  }
+
+  .expert-team-grid {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 24px;
+  }
+
+  .expert-team-card {
+    padding: 18px;
+  }
+
+  .expert-team-image {
+    height: 300px;
+  }
+
+  .expert-team-info h3 {
+    font-size: 19px;
+  }
+
+  .expert-team-info p {
+    font-size: 14px;
+  }
+}
+
+/* =====================================================
+   MOBILE TABLET
+===================================================== */
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .expert-team-section {
+    padding: 50px 15px;
+  }
+
+  .expert-team-header {
+    margin-bottom: 35px;
+  }
+
+  .team-small-title {
+    gap: 14px;
+  }
+
+  .team-small-title span {
+    width: 35px;
+  }
+
+  .team-small-title p {
+    font-size: 18px;
+
+    letter-spacing: 3px;
+  }
+
+  .expert-team-header h2 {
+    font-size: 43px;
+  }
+
+  .team-description {
+    font-size: 13px;
+
+    line-height: 1.6;
+  }
+
+  .expert-team-grid {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 18px;
+  }
+
+  .expert-team-card {
+    padding: 13px;
+
+    border-radius: 14px;
+  }
+
+  .expert-team-image {
+    height: 230px;
+
+    border-radius: 12px;
+  }
+
+  .expert-team-info {
+    padding-top: 12px;
+  }
+
+  .expert-team-info h3 {
+    font-size: 16px;
+  }
+
+  .expert-team-info p {
+    font-size: 12px;
+  }
+
+  .team-socials {
+    gap: 10px;
+
+    margin-top: 15px;
+  }
+
+  .team-socials a {
+    width: 32px;
+    height: 32px;
+  }
+
+  .team-socials svg {
+    width: 15px;
+    height: 15px;
+  }
+
+  .desktop-break {
+    display: none;
+  }
+}
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 575px) {
+  .expert-team-section {
+    padding: 45px 15px 50px;
+  }
+
+  .expert-team-container {
+    padding: 0;
+  }
+
+  .expert-team-header {
+    margin-bottom: 32px;
+  }
+
+  .team-small-title {
+    gap: 10px;
+
+    margin-bottom: 10px;
+  }
+
+  .team-small-title span {
+    width: 28px;
+
+    height: 2px;
+  }
+
+  .team-small-title p {
+    font-size: 15px;
+
+    letter-spacing: 2.5px;
+  }
+
+  .expert-team-header h2 {
+    font-size: 37px;
+
+    letter-spacing: 1px;
+  }
+
+  .team-description {
+    margin-top: 13px;
+
+    padding: 0 8px;
+
+    font-size: 15px;
+
+    line-height: 1.65;
+  }
+
+  .desktop-break {
+    display: none;
+  }
+
+  .team-heading-line {
+    margin-top: 17px;
+  }
+
+  .team-heading-line span {
+    width: 65px;
+
+    height: 4px;
+  }
+
+  .team-heading-line i {
+    width: 7px;
+    height: 7px;
+  }
+
+  .expert-team-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 18px 12px;
+  }
+
+  .expert-team-card {
+    padding: 9px 9px 15px;
+
+    border-radius: 13px;
+  }
+
+  .card-dots {
+    top: 12px;
+    left: 10px;
+
+    width: 20px;
+
+    grid-template-columns: repeat(2, 4px);
+
+    gap: 3px;
+  }
+
+  .card-dots span {
+    width: 4px;
+    height: 4px;
+  }
+
+  .expert-team-image {
+    height: 190px;
+
+    border-radius: 10px;
+  }
+
+  .team-image-circle {
+    width: 82%;
+  }
+
+  .expert-team-info {
+    padding-top: 10px;
+  }
+
+  .expert-team-info h3 {
+    font-size: 15px;
+
+    line-height: 1.25;
+  }
+
+  .expert-team-info p {
+    margin-top: 3px;
+
+    font-size: 11px;
+  }
+
+  .team-member-line {
+    width: 35px;
+
+    height: 2px;
+
+    margin-top: 10px;
+  }
+
+  .team-socials {
+    gap: 7px;
+
+    margin-top: 12px;
+  }
+
+  .team-socials a {
+    width: 28px;
+    height: 28px;
+  }
+
+  .team-socials svg {
+    width: 14px;
+    height: 14px;
+  }
+
+  .team-bg-dots-left {
+    left: -25px;
+  }
+
+  .team-bg-circle-top {
+    right: -100px;
+  }
+}
+
+/* =====================================================
+   VERY SMALL MOBILE
+===================================================== */
+
+@media (max-width: 390px) {
+  .expert-team-section {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .expert-team-header h2 {
+    font-size: 32px;
+  }
+
+  .team-small-title p {
+    font-size: 13px;
+
+    letter-spacing: 2px;
+  }
+
+  .team-small-title span {
+    width: 23px;
+  }
+
+  .team-description {
+    font-size: 11px;
+  }
+
+  .expert-team-grid {
+    gap: 15px 9px;
+  }
+
+  .expert-team-card {
+    padding: 8px 7px 12px;
+  }
+
+  .expert-team-image {
+    height: 165px;
+  }
+
+  .expert-team-info h3 {
+    font-size: 11px;
+  }
+
+  .expert-team-info p {
+    font-size: 8px;
+  }
+
+  .team-socials {
+    gap: 5px;
+  }
+
+  .team-socials a {
+    width: 25px;
+    height: 25px;
+  }
+
+  .team-socials svg {
+    width: 12px;
+    height: 12px;
+  }
+}

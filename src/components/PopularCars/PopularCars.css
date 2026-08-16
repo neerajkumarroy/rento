@@ -1,0 +1,853 @@
+/* =========================================================
+   POPULAR CARS — MODERN PREMIUM DESIGN
+========================================================= */
+
+.popular-cars-section {
+  width: 100%;
+  padding: 85px 0 80px;
+  background:
+    radial-gradient(
+      circle at 10% 20%,
+      rgba(31, 119, 255, 0.045),
+      transparent 28%
+    ),
+    #ffffff;
+}
+
+.popular-cars-container {
+  width: calc(100% - 100px);
+  margin: 0 50px;
+}
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.popular-cars-heading {
+  text-align: center;
+}
+
+.popular-cars-heading h2 {
+  margin: 0;
+
+  color: #12233d;
+
+  font-size: 34px;
+  line-height: 1.2;
+  font-weight: 800;
+
+  letter-spacing: -0.8px;
+}
+
+.popular-cars-heading p {
+  margin: 9px 0 0;
+
+  color: #7d8ba0;
+
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* =========================================================
+   CARS GRID
+========================================================= */
+
+.popular-cars-grid {
+  width: 100%;
+
+  margin-top: 40px;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 20px;
+}
+
+/* =========================================================
+   MODERN CAR CARD
+========================================================= */
+
+.popular-car-card {
+  position: relative;
+
+  min-width: 0;
+
+  overflow: hidden;
+
+  border-radius: 18px;
+
+  /*
+    Transparent blue glass gradient
+  */
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.96) 0%,
+    rgba(237, 247, 255, 0.94) 45%,
+    rgba(216, 235, 255, 0.78) 100%
+  );
+
+  border: 1px solid rgba(110, 170, 235, 0.3);
+
+  box-shadow: 0 8px 25px rgba(25, 91, 160, 0.07);
+
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    border-color 0.35s ease;
+}
+
+/* Decorative blue glow */
+
+.popular-car-card::before {
+  content: "";
+
+  position: absolute;
+
+  width: 170px;
+  height: 170px;
+
+  top: -105px;
+  right: -70px;
+
+  border-radius: 50%;
+
+  background: radial-gradient(
+    circle,
+    rgba(45, 135, 255, 0.2),
+    rgba(45, 135, 255, 0)
+  );
+
+  pointer-events: none;
+}
+
+/* Bottom glow */
+
+.popular-car-card::after {
+  content: "";
+
+  position: absolute;
+
+  width: 140px;
+  height: 100px;
+
+  bottom: -65px;
+  left: -40px;
+
+  border-radius: 50%;
+
+  background: rgba(60, 145, 255, 0.08);
+
+  filter: blur(15px);
+
+  pointer-events: none;
+}
+
+/* =========================================================
+   CARD HOVER
+========================================================= */
+
+.popular-car-card:hover {
+  transform: translateY(-8px);
+
+  border-color: rgba(45, 132, 230, 0.48);
+
+  box-shadow:
+    0 18px 40px rgba(24, 93, 165, 0.15),
+    0 0 0 1px rgba(70, 151, 240, 0.05);
+}
+
+/* =========================================================
+   CAR IMAGE AREA
+========================================================= */
+
+.popular-car-image {
+  position: relative;
+  z-index: 2;
+
+  width: 100%;
+  height: 155px;
+
+  padding: 14px 12px 5px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /*
+    Slight blue transparent background
+  */
+  background: linear-gradient(
+    180deg,
+    rgba(231, 243, 255, 0.72),
+    rgba(249, 252, 255, 0.38)
+  );
+
+  border-bottom: 1px solid rgba(130, 181, 230, 0.16);
+}
+
+/* Soft image glow */
+
+.popular-car-image::after {
+  content: "";
+
+  position: absolute;
+
+  width: 65%;
+  height: 35px;
+
+  left: 17.5%;
+  bottom: 5px;
+
+  border-radius: 50%;
+
+  background: rgba(36, 113, 193, 0.1);
+
+  filter: blur(13px);
+
+  pointer-events: none;
+}
+
+.popular-car-image img {
+  position: relative;
+  z-index: 2;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+
+  display: block;
+
+  transition:
+    transform 0.4s ease,
+    filter 0.4s ease;
+}
+
+.popular-car-card:hover .popular-car-image img {
+  transform: scale(1.07) translateY(-2px);
+
+  filter: drop-shadow(0 10px 8px rgba(25, 76, 125, 0.13));
+}
+
+/* =========================================================
+   CAR INFORMATION
+========================================================= */
+
+.popular-car-info {
+  position: relative;
+  z-index: 3;
+
+  padding: 16px 16px 18px;
+}
+
+.popular-car-info h3 {
+  margin: 0;
+
+  color: #1b2c44;
+
+  font-size: 14px;
+  line-height: 1.3;
+
+  font-weight: 750;
+}
+
+/* =========================================================
+   PRICE
+========================================================= */
+
+.popular-car-price {
+  margin-top: 7px;
+
+  display: flex;
+  align-items: baseline;
+
+  gap: 4px;
+}
+
+.popular-car-price strong {
+  color: #0866d8;
+
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.popular-car-price span {
+  color: #8290a2;
+
+  font-size: 9px;
+}
+
+/* =========================================================
+   FEATURES
+========================================================= */
+
+.popular-car-features {
+  margin-top: 14px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 16px;
+}
+
+.popular-car-features span {
+  display: flex;
+  align-items: center;
+
+  gap: 5px;
+
+  color: #6f7f92;
+
+  font-size: 9px;
+
+  white-space: nowrap;
+}
+
+.popular-car-features svg {
+  width: 13px;
+  height: 13px;
+
+  color: #367fca;
+}
+
+/* =========================================================
+   DOWNLOAD APP
+========================================================= */
+
+.download-app {
+  position: relative;
+
+  width: 100%;
+  min-height: 245px;
+
+  margin-top: 55px;
+
+  padding: 38px 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  overflow: hidden;
+
+  border-radius: 18px;
+
+  background: linear-gradient(110deg, #edf6ff 0%, #e4f1ff 48%, #d3e8ff 100%);
+
+  border: 1px solid rgba(92, 158, 222, 0.2);
+
+  box-shadow: 0 12px 35px rgba(35, 100, 160, 0.08);
+}
+
+/* Decorative circles */
+
+.download-app::before {
+  content: "";
+
+  position: absolute;
+
+  width: 320px;
+  height: 320px;
+
+  right: 15%;
+  top: -180px;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.38);
+}
+
+.download-app::after {
+  content: "";
+
+  position: absolute;
+
+  width: 250px;
+  height: 250px;
+
+  left: 40%;
+  bottom: -180px;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.28);
+}
+
+/* =========================================================
+   APP CONTENT
+========================================================= */
+
+.download-app-content {
+  position: relative;
+  z-index: 3;
+  margin-left: 100px;
+
+  flex: 0 0 42%;
+}
+
+.download-app-icon {
+  width: 40px;
+  height: 40px;
+
+  margin-bottom: 12px;
+
+  display: none;
+
+  align-items: center;
+  justify-content: center;
+
+  color: #0866d8;
+
+  border-radius: 11px;
+
+  background: rgba(255, 255, 255, 0.8);
+
+  box-shadow: 0 6px 18px rgba(21, 93, 160, 0.1);
+}
+
+.download-app-content h2 {
+  margin: 0;
+
+  color: #162b46;
+
+  font-size: 24px;
+
+  line-height: 1.25;
+
+  font-weight: 800;
+
+  letter-spacing: -0.5px;
+}
+
+.download-app-content p {
+  max-width: 350px;
+
+  margin: 10px 0 0;
+
+  color: #718198;
+
+  font-size: 15px;
+
+  line-height: 1.5;
+}
+
+/* =========================================================
+   STORE BUTTONS
+========================================================= */
+
+.app-store-buttons {
+  margin-top: 20px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+}
+
+.app-store-button {
+  display: block;
+
+  height: 40px;
+
+  text-decoration: none;
+
+  transition:
+    transform 0.25s ease,
+    filter 0.25s ease;
+}
+
+.app-store-button:hover {
+  transform: translateY(-3px);
+
+  filter: drop-shadow(0 6px 10px rgba(25, 80, 135, 0.15));
+}
+
+.app-store-button img {
+  width: auto;
+  height: 100%;
+
+  display: block;
+
+  object-fit: contain;
+}
+
+/* =========================================================
+   APP VISUAL
+========================================================= */
+
+.download-app-visual {
+  position: relative;
+  z-index: 3;
+
+  width: 55%;
+  height: 245px;
+
+  display: flex;
+
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.app-preview-image {
+  width: min(700px, 100%);
+  height: 250px;
+  padding-top: 20px;
+
+  object-fit: contain;
+
+  display: block;
+
+  filter: drop-shadow(0 12px 15px rgba(35, 80, 125, 0.08));
+}
+
+/* =========================================================
+   LARGE DESKTOP
+========================================================= */
+
+@media (min-width: 1400px) {
+  .popular-cars-section {
+    padding-top: 1px;
+  }
+
+  .popular-cars-heading h2 {
+    font-size: 36px;
+  }
+
+  .popular-cars-heading p {
+    font-size: 14px;
+  }
+
+  .popular-cars-grid {
+    gap: 24px;
+
+    margin-top: 42px;
+  }
+
+  .popular-car-image {
+    height: 175px;
+  }
+
+  .popular-car-info {
+    padding: 17px 18px 20px;
+  }
+
+  .popular-car-info h3 {
+    font-size: 15px;
+  }
+
+  .popular-car-price strong {
+    font-size: 15px;
+  }
+
+  .download-app {
+    min-height: 270px;
+
+    padding: 42px 52px;
+  }
+
+  .download-app-content h2 {
+    font-size: 40px;
+  }
+
+  .download-app-visual {
+    height: 270px;
+  }
+
+  .app-preview-image {
+    height: 305px;
+  }
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+  .popular-cars-container {
+    width: calc(100% - 100px);
+    margin: 0 50px;
+  }
+
+  .popular-cars-section {
+    padding: 65px 0 55px;
+  }
+
+  .popular-cars-heading h2 {
+    font-size: 30px;
+  }
+
+  .popular-cars-heading p {
+    font-size: 15px;
+  }
+
+  .popular-cars-grid {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 18px;
+  }
+
+  .popular-car-image {
+    height: 175px;
+  }
+
+  .popular-car-info h3 {
+    font-size: 14px;
+  }
+
+  .popular-car-price strong {
+    font-size: 14px;
+  }
+
+  .popular-car-features span {
+    font-size: 10px;
+  }
+
+  .download-app {
+    min-height: 225px;
+
+    padding: 30px;
+  }
+
+  .download-app-content {
+    flex-basis: 48%;
+  }
+
+  .download-app-content h2 {
+    font-size: 21px;
+  }
+
+  .download-app-content p {
+    font-size: 10px;
+  }
+
+  .download-app-visual {
+    width: 50%;
+    height: 215px;
+  }
+
+  .app-preview-image {
+    height: 210px;
+  }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+  .popular-cars-section {
+    padding: 55px 0 45px;
+  }
+
+  .popular-cars-container {
+    width: calc(100% - 30px);
+    margin: 0 15px;
+  }
+
+  .popular-cars-heading h2 {
+    font-size: 30px;
+  }
+
+  .popular-cars-heading p {
+    font-size: 15px;
+  }
+
+  /* CAR GRID */
+
+  .popular-cars-grid {
+    grid-template-columns: 1fr 1fr;
+
+    gap: 13px;
+
+    margin-top: 30px;
+  }
+
+  .popular-car-card {
+    border-radius: 15px;
+  }
+
+  .popular-car-image {
+    height: 130px;
+
+    padding: 8px;
+  }
+
+  .popular-car-info {
+    padding: 12px;
+  }
+
+  .popular-car-info h3 {
+    font-size: 14px;
+  }
+
+  .popular-car-price {
+    margin-top: 5px;
+  }
+
+  .popular-car-price strong {
+    font-size: 12px;
+  }
+
+  .popular-car-price span {
+    font-size: 11px;
+  }
+
+  .popular-car-features {
+    margin-top: 13px;
+
+    gap: 9px;
+  }
+
+  .popular-car-features span {
+    font-size: 11px;
+
+    gap: 3px;
+  }
+
+  .popular-car-features svg {
+    width: 10px;
+    height: 10px;
+  }
+
+  /* APP */
+
+  .download-app {
+    min-height: 450px;
+
+    margin-top: 32px;
+
+    padding: 28px 22px;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    justify-content: flex-start;
+
+    border-radius: 15px;
+  }
+
+  .download-app-content {
+    width: 100%;
+    flex: none;
+  }
+
+  .download-app-icon {
+    display: flex;
+  }
+
+  .download-app-content h2 {
+    font-size: 25px;
+  }
+
+  .download-app-content p {
+    max-width: 280px;
+
+    font-size: 15px;
+  }
+  .download-app-content {
+    margin-left: 0px;
+  }
+
+  .app-store-buttons {
+    margin-top: 17px;
+
+    gap: 7px;
+  }
+
+  .app-store-button {
+    height: 34px;
+  }
+
+  .download-app-visual {
+    width: 100%;
+
+    height: 210px;
+
+    margin-top: 15px;
+
+    align-items: flex-end;
+
+    justify-content: center;
+  }
+
+  .app-preview-image {
+    width: 100%;
+
+    height: 205px;
+
+    object-position: center bottom;
+  }
+}
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 420px) {
+  .popular-cars-container {
+    width: calc(100% - 24px);
+
+    margin: 0 12px;
+  }
+  .download-app-content {
+    margin-left: 0px;
+  }
+
+  .popular-cars-heading h2 {
+    font-size: 27px;
+  }
+
+  .popular-cars-grid {
+    gap: 10px;
+  }
+
+  .popular-car-image {
+    height: 108px;
+  }
+
+  .popular-car-info {
+    padding: 10px;
+  }
+
+  .popular-car-info h3 {
+    font-size: 10px;
+  }
+
+  .popular-car-price strong {
+    font-size: 11px;
+  }
+
+  .popular-car-features {
+    gap: 6px;
+  }
+
+  .popular-car-features span {
+    font-size: 6.5px;
+  }
+
+  .download-app {
+    min-height: 420px;
+
+    padding: 24px 18px;
+  }
+
+  .download-app-content h2 {
+    font-size: 20px;
+  }
+
+  .download-app-content p {
+    font-size: 9px;
+  }
+
+  .download-app-visual {
+    height: 190px;
+  }
+
+  .app-preview-image {
+    height: 185px;
+  }
+}
