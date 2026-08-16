@@ -572,7 +572,7 @@
   }
 
   .hero-feature h3 {
-    font-size: 13px;
+    font-size: 17px;
   }
 
   .hero-feature p {
@@ -706,8 +706,8 @@
 
   .hero-features {
     min-height: auto;
-    padding: 22px 0;
     margin-top: 25px;
+    padding-top: 63px;
   }
 
   .hero-features-inner {
@@ -735,11 +735,11 @@
   }
 
   .hero-feature h3 {
-    font-size: 15px;
+    font-size: 16px;
   }
 
   .hero-feature p {
-    font-size: 13px;
+    font-size: 15px;
 
     line-height: 1.4;
   }
@@ -786,10 +786,10 @@
   }
 
   .hero-feature h3 {
-    font-size: 11px;
+    font-size: 15px;
   }
 
   .hero-feature p {
-    font-size: 9px;
+    font-size: 15px;
   }
 }
