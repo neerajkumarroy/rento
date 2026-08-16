@@ -23,20 +23,20 @@ function Header() {
             Home
           </a>
 
-          <a href="#cars" onClick={closeMenu}>
-            Cars
+          <a href="#team" onClick={closeMenu}>
+            Our Team
           </a>
 
           <a href="#services" onClick={closeMenu}>
             Services
           </a>
 
-          <a href="#locations" onClick={closeMenu}>
-            Locations
+          <a href="#car" onClick={closeMenu}>
+            Cars
           </a>
 
-          <a href="#deals" onClick={closeMenu}>
-            Deals
+          <a href="#brand" onClick={closeMenu}>
+            Brands
           </a>
 
           <a href="#about" onClick={closeMenu}>

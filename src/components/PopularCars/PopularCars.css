@@ -277,7 +277,7 @@
 .popular-car-price span {
   color: #8290a2;
 
-  font-size: 9px;
+  font-size: 12px;
 }
 
 /* =========================================================
@@ -301,7 +301,7 @@
 
   color: #6f7f92;
 
-  font-size: 9px;
+  font-size: 12px;
 
   white-space: nowrap;
 }
@@ -814,7 +814,7 @@
   }
 
   .popular-car-info h3 {
-    font-size: 10px;
+    font-size: 13px;
   }
 
   .popular-car-price strong {
@@ -826,7 +826,7 @@
   }
 
   .popular-car-features span {
-    font-size: 6.5px;
+    font-size: 9px;
   }
 
   .download-app {
@@ -836,11 +836,11 @@
   }
 
   .download-app-content h2 {
-    font-size: 20px;
+    font-size: 23px;
   }
 
   .download-app-content p {
-    font-size: 9px;
+    font-size: 14px;
   }
 
   .download-app-visual {

@@ -1,0 +1,1334 @@
+/* =====================================================
+   RENTO SERVICES SECTION
+===================================================== */
+
+.rento-services {
+  width: 100%;
+
+  padding: 90px 50px 80px;
+
+  box-sizing: border-box;
+
+  overflow: hidden;
+
+  font-family: "Poppins", sans-serif;
+
+  /* Premium Blue Gradient Background */
+  background:
+    radial-gradient(
+      circle at 10% 15%,
+      rgba(68, 139, 220, 0.2),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 90% 80%,
+      rgba(25, 82, 160, 0.18),
+      transparent 35%
+    ),
+    linear-gradient(135deg, #f8fbff 0%, #eef6fd 45%, #e5f1fb 100%);
+}
+
+/* =====================================================
+   SERVICES HEADER
+===================================================== */
+
+.services-header {
+  width: 100%;
+
+  max-width: 1400px;
+
+  margin: 0 auto 75px;
+
+  text-align: center;
+}
+
+/* =====================================================
+   OUR SERVICES LABEL
+===================================================== */
+
+.services-label {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 9px;
+
+  margin-bottom: 14px;
+
+  color: #0e0d0d;
+
+  font-size: 37px;
+
+  font-weight: 600;
+
+  line-height: 1.4;
+
+  letter-spacing: 0.5px;
+
+  text-transform: none;
+
+  text-align: center;
+}
+
+.services-label span {
+  display: block;
+
+  width: 25px;
+
+  height: 2px;
+
+  background: #0a0a0a;
+
+  border-radius: 20px;
+}
+
+/* =====================================================
+   HEADING ROW
+===================================================== */
+
+.services-heading-row {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 14px;
+
+  text-align: center;
+}
+
+/* =====================================================
+   MAIN HEADING
+===================================================== */
+
+.services-heading-row h2 {
+  margin: 0;
+
+  color: #4b80db;
+
+  font-size: 37px;
+
+  font-weight: 600;
+
+  line-height: 1.25;
+
+  letter-spacing: 0;
+
+  text-transform: none;
+
+  text-align: center;
+}
+
+/* =====================================================
+   DESCRIPTION
+===================================================== */
+
+.services-heading-row p {
+  width: 100%;
+
+  max-width: 650px;
+
+  margin: 0 auto;
+
+  color: #737d8d;
+
+  font-size: 16px;
+
+  font-weight: 400;
+
+  line-height: 1.7;
+
+  text-align: center;
+}
+
+/* =====================================================
+   SERVICE ROAD / TIMELINE
+===================================================== */
+
+.services-road {
+  position: relative;
+
+  width: 100%;
+
+  max-width: 1250px;
+
+  margin: 0 auto;
+}
+
+/* =====================================================
+   CENTER ROAD LINE
+===================================================== */
+
+.road-line {
+  position: absolute;
+
+  top: 0;
+
+  bottom: 0;
+
+  left: 50%;
+
+  width: 1px;
+
+  transform: translateX(-50%);
+
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(39, 91, 145, 0.35) 0,
+    rgba(39, 91, 145, 0.35) 7px,
+    transparent 7px,
+    transparent 15px
+  );
+}
+
+/* =====================================================
+   SERVICE ROW
+===================================================== */
+
+.service-row {
+  position: relative;
+
+  width: 100%;
+
+  min-height: 185px;
+
+  display: flex;
+
+  align-items: center;
+
+  box-sizing: border-box;
+}
+
+/* =====================================================
+   LEFT CARD
+===================================================== */
+
+.service-left {
+  justify-content: flex-start;
+
+  padding-right: calc(50% + 45px);
+}
+
+/* =====================================================
+   RIGHT CARD
+===================================================== */
+
+.service-right {
+  justify-content: flex-end;
+
+  padding-left: calc(50% + 45px);
+}
+
+/* =====================================================
+   SERVICE CARD
+===================================================== */
+
+.service-card {
+  position: relative;
+
+  width: 100%;
+
+  min-height: 145px;
+
+  padding: 20px 22px;
+
+  box-sizing: border-box;
+
+  background: rgba(255, 255, 255, 0.96);
+
+  border: 1px solid rgba(215, 225, 235, 0.95);
+
+  border-radius: 16px;
+
+  box-shadow: 0 8px 30px rgba(23, 36, 58, 0.05);
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    border-color 0.35s ease;
+}
+
+/* =====================================================
+   LEFT CARD HOVER
+===================================================== */
+
+.service-left .service-card:hover {
+  transform: translateX(8px);
+
+  border-color: #c9d7e5;
+
+  box-shadow: 0 18px 45px rgba(23, 36, 58, 0.1);
+}
+
+/* =====================================================
+   RIGHT CARD HOVER
+===================================================== */
+
+.service-right .service-card:hover {
+  transform: translateX(-8px);
+
+  border-color: #c9d7e5;
+
+  box-shadow: 0 18px 45px rgba(23, 36, 58, 0.1);
+}
+
+/* =====================================================
+   CARD TOP
+===================================================== */
+
+.service-card-top {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 10px;
+
+  margin-bottom: 15px;
+}
+
+/* =====================================================
+   NUMBER
+===================================================== */
+
+.service-number {
+  color: #aeb7c3;
+
+  font-size: 16px;
+
+  font-weight: 600;
+
+  line-height: 1;
+
+  letter-spacing: 1px;
+}
+
+/* =====================================================
+   TAG
+===================================================== */
+
+.service-tag {
+  padding: 4px 9px;
+
+  background: #f1f5f9;
+
+  color: #737d8d;
+
+  border-radius: 20px;
+
+  font-size: 9px;
+
+  font-weight: 500;
+
+  line-height: 1.4;
+
+  white-space: nowrap;
+}
+
+/* =====================================================
+   CARD CONTENT
+===================================================== */
+
+.service-card-content {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 14px;
+}
+
+/* =====================================================
+   SERVICE ICON
+===================================================== */
+
+.service-icon {
+  flex: 0 0 auto;
+
+  width: 43px;
+
+  height: 43px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background: #102039;
+
+  color: #ffffff;
+
+  border-radius: 11px;
+
+  font-size: 17px;
+
+  font-weight: 500;
+
+  line-height: 1;
+
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease;
+}
+
+/* =====================================================
+   ICON HOVER
+===================================================== */
+
+.service-card:hover .service-icon {
+  background: #f28a20;
+
+  transform: rotate(-5deg);
+}
+
+/* =====================================================
+   SERVICE INFO
+===================================================== */
+
+.service-info {
+  min-width: 0;
+
+  padding-right: 25px;
+}
+
+/* =====================================================
+   SERVICE TITLE
+===================================================== */
+
+.service-info h3 {
+  margin: 1px 0 6px;
+
+  color: #17243a;
+
+  font-size: 17px;
+
+  font-weight: 600;
+
+  line-height: 1.35;
+
+  letter-spacing: 0;
+
+  text-transform: none;
+}
+
+/* =====================================================
+   SERVICE DESCRIPTION
+===================================================== */
+
+.service-info p {
+  margin: 0;
+
+  color: #7d8795;
+
+  font-size: 15px;
+
+  font-weight: 400;
+
+  line-height: 1.6;
+}
+
+/* =====================================================
+   ARROW
+===================================================== */
+
+.service-arrow {
+  position: absolute;
+
+  right: 19px;
+
+  bottom: 17px;
+
+  color: #b4bdc8;
+
+  font-size: 18px;
+
+  font-weight: 400;
+
+  line-height: 1;
+
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.service-card:hover .service-arrow {
+  color: #f28a20;
+
+  transform: translateX(4px);
+}
+
+/* =====================================================
+   CENTER MARKER
+===================================================== */
+
+.service-marker {
+  position: absolute;
+
+  left: 50%;
+
+  top: 50%;
+
+  width: 18px;
+
+  height: 18px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  transform: translate(-50%, -50%);
+
+  background: #eaf4fc;
+
+  border: 1px solid #b9cfe3;
+
+  border-radius: 50%;
+
+  z-index: 3;
+}
+
+/* =====================================================
+   INNER DOT
+===================================================== */
+
+.service-marker span {
+  width: 6px;
+
+  height: 6px;
+
+  display: block;
+
+  background: #102039;
+
+  border-radius: 50%;
+
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease;
+}
+
+/* =====================================================
+   MARKER HOVER
+===================================================== */
+
+.service-row:hover .service-marker span {
+  background: #f28a20;
+
+  transform: scale(1.5);
+}
+
+/* =====================================================
+   LEFT CONNECTOR
+===================================================== */
+
+.service-left .service-card::after {
+  content: "";
+
+  position: absolute;
+
+  right: -45px;
+
+  top: 50%;
+
+  width: 45px;
+
+  height: 1px;
+
+  background: #b9cfe3;
+}
+
+/* =====================================================
+   RIGHT CONNECTOR
+===================================================== */
+
+.service-right .service-card::after {
+  content: "";
+
+  position: absolute;
+
+  left: -45px;
+
+  top: 50%;
+
+  width: 45px;
+
+  height: 1px;
+
+  background: #b9cfe3;
+}
+
+/* =====================================================
+   BOTTOM CTA
+===================================================== */
+
+.services-bottom {
+  width: 100%;
+
+  max-width: 1250px;
+
+  margin: 70px auto 0;
+
+  padding: 25px 28px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 30px;
+
+  box-sizing: border-box;
+
+  background: linear-gradient(135deg, #102039 0%, #17365a 100%);
+
+  border-radius: 16px;
+
+  box-shadow: 0 15px 40px rgba(16, 32, 57, 0.12);
+}
+
+/* =====================================================
+   CTA TEXT
+===================================================== */
+
+.services-bottom-text span {
+  display: block;
+
+  margin-bottom: 4px;
+
+  color: #f28a20;
+
+  font-size: 15px;
+
+  font-weight: 500;
+
+  line-height: 1.4;
+}
+
+.services-bottom-text h3 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 20px;
+
+  font-weight: 500;
+
+  line-height: 1.4;
+
+  text-transform: none;
+}
+
+/* =====================================================
+   CTA BUTTON
+===================================================== */
+
+.services-cta {
+  flex: 0 0 auto;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 12px;
+
+  padding: 12px 18px;
+
+  background: #ffffff;
+
+  color: #102039;
+
+  border-radius: 7px;
+
+  text-decoration: none;
+
+  font-size: 13px;
+
+  font-weight: 500;
+
+  line-height: 1;
+
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.services-cta span {
+  font-size: 17px;
+
+  line-height: 1;
+}
+
+.services-cta:hover {
+  background: #f28a20;
+
+  color: #ffffff;
+
+  transform: translateY(-2px);
+}
+
+/* =====================================================
+   LARGE DESKTOP
+===================================================== */
+
+@media (min-width: 1400px) {
+  .rento-services {
+    padding: 100px 50px 90px;
+  }
+
+  .services-header {
+    margin-bottom: 80px;
+  }
+
+  .services-road {
+    max-width: 1300px;
+  }
+
+  .service-row {
+    min-height: 195px;
+  }
+
+  .service-card {
+    max-width: 555px;
+
+    min-height: 150px;
+  }
+
+  .services-heading-row h2 {
+    font-size: 37px;
+  }
+
+  .services-heading-row p {
+    font-size: 16px;
+  }
+}
+
+/* =====================================================
+   LAPTOP
+===================================================== */
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .rento-services {
+    padding: 85px 50px 75px;
+  }
+
+  .services-header {
+    margin-bottom: 70px;
+  }
+
+  .services-heading-row h2 {
+    font-size: 37px;
+  }
+
+  .services-heading-row p {
+    font-size: 16px;
+  }
+
+  .services-road {
+    max-width: 1200px;
+  }
+
+  .service-row {
+    min-height: 180px;
+  }
+}
+
+/* =====================================================
+   LAPTOP SMALL
+===================================================== */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .rento-services {
+    padding: 75px 50px 70px;
+  }
+
+  .services-header {
+    margin-bottom: 60px;
+  }
+
+  .services-heading-row h2 {
+    font-size: 37px;
+  }
+
+  .services-heading-row p {
+    max-width: 620px;
+
+    font-size: 15px;
+  }
+
+  .service-row {
+    min-height: 175px;
+  }
+
+  .service-left {
+    padding-right: calc(50% + 35px);
+  }
+
+  .service-right {
+    padding-left: calc(50% + 35px);
+  }
+
+  .service-left .service-card::after {
+    right: -35px;
+
+    width: 35px;
+  }
+
+  .service-right .service-card::after {
+    left: -35px;
+
+    width: 35px;
+  }
+
+  .service-info h3 {
+    font-size: 16px;
+  }
+
+  .service-info p {
+    font-size: 11px;
+  }
+}
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .rento-services {
+    padding: 65px 40px 60px;
+  }
+
+  .services-header {
+    margin-bottom: 55px;
+  }
+
+  .services-heading-row {
+    gap: 13px;
+  }
+
+  .services-heading-row h2 {
+    font-size: 37px;
+  }
+
+  .services-heading-row p {
+    max-width: 600px;
+
+    font-size: 15px;
+
+    line-height: 1.65;
+  }
+
+  .service-row {
+    min-height: 170px;
+  }
+
+  .service-left {
+    padding-right: calc(50% + 25px);
+  }
+
+  .service-right {
+    padding-left: calc(50% + 25px);
+  }
+
+  .service-left .service-card::after {
+    right: -25px;
+
+    width: 25px;
+  }
+
+  .service-right .service-card::after {
+    left: -25px;
+
+    width: 25px;
+  }
+
+  .service-card {
+    padding: 18px;
+  }
+
+  .service-info h3 {
+    font-size: 15px;
+  }
+
+  .service-info p {
+    font-size: 11px;
+  }
+
+  .service-icon {
+    width: 40px;
+
+    height: 40px;
+  }
+
+  .services-bottom {
+    margin-top: 55px;
+  }
+}
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 767px) {
+  .rento-services {
+    padding: 55px 20px 55px;
+
+    text-align: center;
+  }
+
+  /* ================= HEADER ================= */
+
+  .services-header {
+    margin-bottom: 42px;
+
+    text-align: center;
+  }
+
+  .services-label {
+    justify-content: center;
+
+    font-size: 12px;
+
+    text-align: center;
+  }
+
+  .services-label span {
+    width: 20px;
+  }
+
+  .services-heading-row {
+    display: block;
+
+    text-align: center;
+  }
+
+  .services-heading-row h2 {
+    font-size: 32px;
+
+    line-height: 1.25;
+
+    text-align: center;
+  }
+
+  .services-heading-row p {
+    max-width: 520px;
+
+    margin: 15px auto 0;
+
+    font-size: 14px;
+
+    line-height: 1.65;
+
+    text-align: center;
+  }
+
+  /* ================= ROAD ================= */
+
+  .services-road {
+    width: 100%;
+
+    padding-left: 0;
+
+    box-sizing: border-box;
+  }
+
+  .road-line {
+    left: 12px;
+
+    transform: none;
+  }
+
+  /* ================= ROW ================= */
+
+  .service-row,
+  .service-left,
+  .service-right {
+    width: 100%;
+
+    min-height: auto;
+
+    padding: 0 0 25px 38px;
+
+    justify-content: flex-start;
+
+    box-sizing: border-box;
+  }
+
+  /* ================= MARKER ================= */
+
+  .service-marker {
+    left: 12px;
+
+    top: 25px;
+
+    width: 17px;
+
+    height: 17px;
+
+    transform: translateX(-50%);
+  }
+
+  .service-marker span {
+    width: 5px;
+
+    height: 5px;
+  }
+
+  /* ================= CARD ================= */
+
+  .service-card {
+    width: 100%;
+
+    min-height: 150px;
+
+    padding: 18px;
+
+    border-radius: 14px;
+
+    text-align: left;
+  }
+
+  .service-left .service-card:hover,
+  .service-right .service-card:hover {
+    transform: translateY(-4px);
+  }
+
+  /* Remove desktop connector */
+
+  .service-left .service-card::after,
+  .service-right .service-card::after {
+    display: none;
+  }
+
+  /* ================= CARD TOP ================= */
+
+  .service-card-top {
+    margin-bottom: 13px;
+  }
+
+  .service-number {
+    font-size: 15px;
+  }
+
+  .service-tag {
+    padding: 4px 8px;
+
+    font-size: 11px;
+  }
+
+  /* ================= CONTENT ================= */
+
+  .service-card-content {
+    gap: 12px;
+  }
+
+  .service-icon {
+    width: 40px;
+
+    height: 40px;
+
+    border-radius: 10px;
+
+    font-size: 15px;
+  }
+
+  .service-info {
+    padding-right: 20px;
+  }
+
+  .service-info h3 {
+    margin-top: 0;
+
+    font-size: 15px;
+  }
+
+  .service-info p {
+    font-size: 11px;
+
+    line-height: 1.6;
+  }
+
+  .service-arrow {
+    right: 17px;
+
+    bottom: 15px;
+
+    font-size: 17px;
+  }
+
+  /* ================= CTA ================= */
+
+  .services-bottom {
+    margin-top: 35px;
+
+    padding: 24px 20px;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    text-align: center;
+
+    gap: 18px;
+
+    border-radius: 14px;
+  }
+
+  .services-bottom-text {
+    text-align: center;
+  }
+
+  .services-bottom-text h3 {
+    font-size: 17px;
+  }
+
+  .services-cta {
+    width: 100%;
+
+    max-width: 190px;
+
+    font-size: 12px;
+  }
+}
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 480px) {
+  .rento-services {
+    padding: 45px 15px 45px;
+  }
+
+  /* Header */
+
+  .services-header {
+    margin-bottom: 38px;
+  }
+
+  .services-label {
+    font-size: 27px;
+  }
+
+  .services-heading-row h2 {
+    font-size: 30px;
+    color: #4b80db;
+    line-height: 1.25;
+  }
+
+  .services-heading-row p {
+    font-size: 15px;
+
+    line-height: 1.6;
+  }
+
+  /* Road */
+
+  .service-row,
+  .service-left,
+  .service-right {
+    padding-left: 34px;
+
+    padding-bottom: 20px;
+  }
+
+  .road-line {
+    left: 10px;
+  }
+
+  .service-marker {
+    left: 10px;
+  }
+
+  /* Card */
+
+  .service-card {
+    min-height: 145px;
+
+    padding: 16px;
+
+    border-radius: 13px;
+  }
+
+  .service-card-top {
+    margin-bottom: 11px;
+  }
+
+  .service-number {
+    font-size: 15px;
+  }
+
+  .service-tag {
+    font-size: 10px;
+
+    padding: 4px 7px;
+  }
+
+  .service-card-content {
+    gap: 10px;
+  }
+
+  .service-icon {
+    width: 37px;
+
+    height: 37px;
+
+    border-radius: 9px;
+
+    font-size: 14px;
+  }
+
+  .service-info {
+    padding-right: 18px;
+  }
+
+  .service-info h3 {
+    font-size: 15px;
+
+    line-height: 1.35;
+  }
+
+  .service-info p {
+    font-size: 13px;
+
+    line-height: 1.55;
+  }
+
+  .service-arrow {
+    right: 15px;
+
+    bottom: 14px;
+
+    font-size: 16px;
+  }
+
+  /* CTA */
+
+  .services-bottom {
+    padding: 22px 16px;
+
+    gap: 16px;
+  }
+
+  .services-bottom-text span {
+    font-size: 15px;
+  }
+
+  .services-bottom-text h3 {
+    font-size: 16px;
+  }
+
+  .services-cta {
+    max-width: 180px;
+
+    padding: 11px 16px;
+  }
+}
+
+/* =====================================================
+   VERY SMALL MOBILE
+===================================================== */
+
+@media (max-width: 360px) {
+  .rento-services {
+    padding: 40px 12px 40px;
+  }
+
+  .services-heading-row h2 {
+    font-size: 28px;
+  }
+
+  .services-heading-row p {
+    font-size: 12px;
+  }
+
+  .service-row,
+  .service-left,
+  .service-right {
+    padding-left: 30px;
+
+    padding-bottom: 18px;
+  }
+
+  .road-line {
+    left: 9px;
+  }
+
+  .service-marker {
+    left: 9px;
+  }
+
+  .service-card {
+    min-height: 140px;
+
+    padding: 14px;
+  }
+
+  .service-card-content {
+    gap: 9px;
+  }
+
+  .service-icon {
+    width: 34px;
+
+    height: 34px;
+
+    font-size: 13px;
+  }
+
+  .service-info h3 {
+    font-size: 13px;
+  }
+
+  .service-info p {
+    font-size: 9px;
+
+    line-height: 1.5;
+  }
+
+  .service-tag {
+    font-size: 6.5px;
+  }
+
+  .service-arrow {
+    right: 13px;
+
+    bottom: 12px;
+  }
+
+  .services-bottom-text h3 {
+    font-size: 15px;
+  }
+}
+
+/* =====================================================
+   EXTRA LARGE SCREENS
+===================================================== */
+
+@media (min-width: 1600px) {
+  .rento-services {
+    padding-left: 50px;
+
+    padding-right: 50px;
+  }
+
+  .services-header {
+    max-width: 1450px;
+  }
+
+  .services-road,
+  .services-bottom {
+    max-width: 1350px;
+  }
+}

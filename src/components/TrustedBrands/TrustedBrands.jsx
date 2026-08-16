@@ -89,7 +89,7 @@ const TrustedBrands = () => {
           TRUSTED BRANDS
       ================================================= */}
 
-      <section className="trusted-brands-section">
+      <section id="brand" className="trusted-brands-section">
         <div className="trusted-brands-container">
           <div className="trusted-brands-heading">
             <h2>Trusted by Leading Brands</h2>

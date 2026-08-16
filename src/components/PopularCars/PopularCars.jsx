@@ -35,7 +35,7 @@ const cars = [
 
 function PopularCars() {
   return (
-    <section className="popular-cars-section">
+    <section id="car" className="popular-cars-section">
       {/* =====================================================
           POPULAR CARS
       ===================================================== */}

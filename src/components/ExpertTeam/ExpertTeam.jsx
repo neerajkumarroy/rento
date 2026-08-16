@@ -30,7 +30,7 @@ const teamMembers = [
 
 const ExpertTeam = () => {
   return (
-    <section className="expert-team-section">
+    <section id="team" className="expert-team-section">
       {/* Decorative Background */}
       <div className="team-bg-dots team-bg-dots-left"></div>
       <div className="team-bg-dots team-bg-dots-right"></div>

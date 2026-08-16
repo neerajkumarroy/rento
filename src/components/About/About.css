@@ -1,0 +1,549 @@
+/* =====================================================
+   ABOUT US
+===================================================== */
+
+.about-section {
+  width: 100%;
+  padding: 50px 15px;
+  background: #ffffff;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* =====================================================
+   CONTAINER
+===================================================== */
+
+.about-container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 70px;
+  box-sizing: border-box;
+}
+
+/* =====================================================
+   IMAGE (transparent PNG friendly — no bg, no crop)
+===================================================== */
+
+.about-image-wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  order: 1;
+  /* no background here — keeps transparent PNGs looking clean */
+}
+
+.about-image {
+  display: block;
+  width: 100%;
+  max-width: 620px;
+  height: 500px;
+  /* changed from cover -> contain so transparent images are never cropped */
+  object-fit: contain;
+  object-position: center;
+  /* drop-shadow instead of a box behind it, so transparency stays intact */
+  filter: drop-shadow(0 20px 35px rgba(16, 32, 57, 0.15));
+  transition: transform 0.35s ease;
+}
+
+.about-image-wrapper:hover .about-image {
+  transform: translateY(-4px);
+}
+
+/* =====================================================
+   EXPERIENCE BOX
+===================================================== */
+
+.about-experience {
+  position: absolute;
+  left: 20px;
+  bottom: 25px;
+  min-width: 145px;
+  padding: 16px 20px;
+  background: #102039;
+  color: #ffffff;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-sizing: border-box;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.experience-number {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.experience-text {
+  margin-top: 3px;
+  font-size: 12px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/* =====================================================
+   CONTENT
+===================================================== */
+
+.about-content {
+  width: 100%;
+  max-width: 600px;
+  order: 2;
+}
+
+.about-small-title {
+  display: inline-block;
+  margin-bottom: 10px;
+  color: #000000;
+  font-size: 37px;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: 1.2px;
+}
+
+.about-content h2 {
+  margin: 0 0 18px;
+  color: #4b80db;
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: -0.3px;
+  text-transform: none;
+}
+
+.about-description {
+  margin: 0 0 16px;
+  color: #737d8d;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.75;
+}
+
+.about-description:last-of-type {
+  margin-bottom: 0;
+}
+
+/* =====================================================
+   FEATURES
+===================================================== */
+
+.about-features {
+  margin-top: 28px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.about-feature {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  background: #f7f8fb;
+  border: 1px solid rgba(16, 32, 57, 0.06);
+  border-radius: 12px;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    background 0.25s ease;
+}
+
+.about-feature:hover {
+  transform: translateY(-3px);
+  background: #ffffff;
+  box-shadow: 0 12px 24px rgba(16, 32, 57, 0.08);
+}
+
+.feature-icon {
+  flex: 0 0 auto;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #102039;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.about-feature h3 {
+  margin: 0 0 2px;
+  color: #17243a;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.about-feature p {
+  margin: 0;
+  color: #8a929d;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+/* =====================================================
+   BUTTON
+===================================================== */
+
+.about-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 30px;
+  padding: 13px 22px;
+  background: #102039;
+  color: #ffffff;
+  border-radius: 7px;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  box-shadow: 0 8px 20px rgba(16, 32, 57, 0.2);
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.about-button span {
+  font-size: 18px;
+  line-height: 1;
+  transition: transform 0.25s ease;
+}
+
+.about-button:hover {
+  background: #f28a20;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 26px rgba(242, 138, 32, 0.3);
+}
+
+.about-button:hover span {
+  transform: translateX(3px);
+}
+
+/* =====================================================
+   LARGE DESKTOP
+===================================================== */
+
+@media (min-width: 1400px) {
+  .about-section {
+    padding: 15px;
+    padding-bottom: 90px;
+  }
+
+  .about-container {
+    gap: 85px;
+  }
+
+  .about-image {
+    max-width: 650px;
+    height: 520px;
+  }
+
+  .about-content h2 {
+    font-size: 42px;
+  }
+}
+
+/* =====================================================
+   LAPTOP
+===================================================== */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .about-section {
+    padding: 70px 15px;
+  }
+
+  .about-container {
+    gap: 45px;
+  }
+
+  .about-image-wrapper {
+    min-height: 430px;
+  }
+
+  .about-image {
+    height: 430px;
+  }
+
+  .about-content h2 {
+    font-size: 37px;
+  }
+
+  .about-description {
+    font-size: 15px;
+  }
+
+  .about-features {
+    gap: 15px;
+  }
+}
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .about-section {
+    padding: 60px 15px;
+  }
+
+  .about-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  .about-image-wrapper {
+    min-height: 380px;
+  }
+
+  .about-image {
+    height: 380px;
+  }
+
+  .about-content h2 {
+    font-size: 34px;
+  }
+
+  .about-description {
+    font-size: 15px;
+    line-height: 1.65;
+  }
+
+  .about-features {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .about-button {
+    margin-top: 25px;
+  }
+}
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 767px) {
+  .about-section {
+    padding: 55px 15px;
+    overflow-x: hidden;
+  }
+
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    text-align: center;
+    width: 100%;
+  }
+
+  /* Content shows first, image comes after — as requested */
+
+  .about-content {
+    order: 1;
+  }
+
+  .about-image-wrapper {
+    order: 2;
+    width: 100%;
+    max-width: 480px;
+    min-height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .about-image {
+    width: 100%;
+    height: auto;
+    min-height: 280px;
+    max-height: 420px;
+    object-fit: contain;
+  }
+
+  .about-experience {
+    left: 15px;
+    bottom: 15px;
+    min-width: 125px;
+    padding: 12px 15px;
+    border-radius: 10px;
+    align-items: center;
+  }
+
+  .experience-number {
+    font-size: 26px;
+  }
+
+  .experience-text {
+    font-size: 10px;
+  }
+
+  /* Content — centered as a block on the page, not just text-aligned */
+
+  .about-content {
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-small-title {
+    font-size: 27px;
+    margin-bottom: 8px;
+    text-align: center;
+  }
+
+  .about-content h2 {
+    margin: 0 auto 16px;
+    font-size: 27px;
+    line-height: 1.3;
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .about-description {
+    font-size: 15px;
+    line-height: 1.75;
+    margin: 0 auto 16px;
+    text-align: left;
+    max-width: 360px;
+  }
+
+  /* Features — cards that properly fill the section width */
+
+  .about-features {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin: 24px auto 0;
+    text-align: left;
+    width: 100%;
+    max-width: 460px;
+  }
+
+  .about-feature {
+    width: 100%;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 16px 14px;
+    text-align: left;
+  }
+
+  .about-feature h3 {
+    font-size: 13px;
+  }
+
+  .about-feature p {
+    font-size: 11px;
+  }
+
+  .about-button {
+    margin: 25px auto 0;
+    font-size: 13px;
+  }
+}
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 480px) {
+  .about-section {
+    padding: 0px 15px;
+    padding-bottom: 80px;
+  }
+
+  .about-container {
+    gap: 32px;
+  }
+
+  .about-image {
+    min-height: 260px;
+    max-height: 360px;
+  }
+
+  .about-experience {
+    left: 10px;
+    bottom: 10px;
+    min-width: 115px;
+    padding: 10px 12px;
+  }
+
+  .experience-number {
+    font-size: 23px;
+  }
+
+  .experience-text {
+    font-size: 9px;
+  }
+
+  .about-content h2 {
+    font-size: 26px;
+  }
+
+  .about-description {
+    font-size: 15px;
+  }
+
+  .about-features {
+    gap: 12px;
+  }
+
+  .about-button {
+    width: 100%;
+    max-width: 230px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* =====================================================
+   VERY SMALL MOBILE
+===================================================== */
+
+@media (max-width: 360px) {
+  .about-section {
+    padding: 40px 12px;
+  }
+
+  .about-image {
+    min-height: 230px;
+  }
+
+  .about-content h2 {
+    font-size: 24px;
+  }
+
+  .about-description {
+    font-size: 14px;
+  }
+
+  .about-feature h3 {
+    font-size: 12px;
+  }
+
+  .about-feature p {
+    font-size: 10px;
+  }
+}

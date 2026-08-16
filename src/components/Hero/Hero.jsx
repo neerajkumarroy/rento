@@ -10,12 +10,12 @@ import {
 import "./Hero.css";
 
 const LOCATIONS = [
-  "Dhaka",
-  "Chattogram",
-  "Sylhet",
-  "Khulna",
-  "Rajshahi",
-  "Cox's Bazar",
+  "Dehradun",
+  "Chandigarh",
+  "Delhi",
+  "Bijnor",
+  "Lucknow",
+  "Haridwar",
 ];
 
 function Hero() {

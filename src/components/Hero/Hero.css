@@ -468,7 +468,7 @@
   }
 
   .hero-heading p {
-    font-size: 13px;
+    font-size: 18px;
   }
 
   .hero-search-box {
@@ -761,7 +761,8 @@
   }
 
   .hero-heading p {
-    font-size: 11px;
+    color: #494644;
+    font-size: 14px;
   }
 
   .hero-search-box {
