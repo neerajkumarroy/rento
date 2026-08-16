@@ -28,7 +28,7 @@ const defaultCars = [
   },
   {
     id: 3,
-    name: "Audi A6",
+    name: "Mahindra Thar Roxx",
     price: "$90",
     fuel: "Petrol",
     transmission: "Automatic",
@@ -37,7 +37,7 @@ const defaultCars = [
   },
   {
     id: 4,
-    name: "Range Rover Evoque",
+    name: "Rolls-Royce",
     price: "$110",
     fuel: "Diesel",
     transmission: "Automatic",
@@ -46,7 +46,7 @@ const defaultCars = [
   },
   {
     id: 5,
-    name: "Porsche Cayenne",
+    name: "Rolls-Royce white",
     price: "$125",
     fuel: "Petrol",
     transmission: "Automatic",

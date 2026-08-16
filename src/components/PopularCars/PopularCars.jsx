@@ -18,14 +18,14 @@ const cars = [
     transmission: "Auto",
   },
   {
-    name: "BMW 3 Series",
+    name: "Mahindra Thar Roxx",
     price: "$90",
     image: "/assets/car-3.png",
     seats: "5 Seats",
     transmission: "Auto",
   },
   {
-    name: "Toyota RAV4",
+    name: "Rolls-Royce",
     price: "$70",
     image: "/assets/car-4.png",
     seats: "5 Seats",
