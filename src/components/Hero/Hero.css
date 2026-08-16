@@ -655,7 +655,7 @@
 
   .hero-search-item {
     min-height: 48px;
-
+    margin: 10px;
     padding: 7px 9px;
 
     border-right: none;
